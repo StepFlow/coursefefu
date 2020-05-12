@@ -1,0 +1,88 @@
+body 
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url(http://bgrounds.ru/_include/img/bgs/curls/cerulean-curls.png);
+    background-attachment: fixed;
+    padding: 10px 0;
+}
+
+.maincontainer 
+{
+    padding: 20px;
+    background-color: #eee;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.maincontainer h1 {
+    font-size: 2.5rem;
+}
+
+.maincontainer h2 {
+    font-size: 2.25rem;
+}
+
+.maincontainer h3 {
+    font-size: 2rem;
+}
+
+.maincontainer h4 {
+    font-size: 1.75rem;
+}
+
+.maincontainer h5 {
+    font-size: 1.5rem;
+}
+
+.maincontainer h6 {
+    font-size: 1.25rem;
+}
+
+.maincontainer h1,
+.maincontainer h2,
+.maincontainer h3,
+.maincontainer h4,
+.maincontainer h5,
+.maincontainer h6 {
+    text-align: center;
+}
+
+.maincontainer section {
+    margin: 20px 0;
+}
+
+.maincontainer p {
+    margin: 20px 0;
+}
+
+.maincontainer img {
+    display: block;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+.card img {
+    margin: 0;
+}
+
+.review-card {
+    height: 100%;
+}
+
+.review-card__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    height: 100%;
+}
+
+.review-card__button {
+    margin-top: auto;
+}
+
+@media (max-width: 575px) {
+    .maincontainer {
+        padding: 15px;
+    }
+}

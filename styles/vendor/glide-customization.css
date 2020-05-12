@@ -1,0 +1,22 @@
+.glide-wrapper {
+    margin: 0 4em; 
+}
+
+.slider__arrow--prev {
+    left: -4em;
+}
+
+.slider__arrow--next {
+    right: -4em;
+}
+
+@media (max-width: 575px) {
+    .glide-wrapper {
+        margin: 0 0 0 -15px;
+        width: calc(100% + 15px * 2);
+    }
+
+    .controls {
+        display: none;
+    }
+}
