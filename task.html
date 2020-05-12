@@ -1,0 +1,205 @@
+<div>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta charset="UTF-8">
+        <title>Курс по теме Кластерный и факторный анализ</title>
+    </head>
+    <body>
+        <main>
+            <aside>
+
+            </aside>
+            <article class = "maincontainer">
+                <h1 >Итоговая работа по курсу</h1>
+                    <h3>Выполните задание и составьте отчет о проделаной работе</h3>
+                    <p>1. Таблица с исходными данными.</p>
+                    <table width="511">
+                    <tbody>
+                    <tr>
+                    <td colspan="6" width="511">База данных студентов</td>
+                    </tr>
+                    <tr>
+                    <td width="63">Номер<br /> студента</td>
+                    <td width="35">Пол</td>
+                    <td width="95">Применение</td>
+                    <td width="122">Обеспокоенность</td>
+                    <td width="76">Скучность</td>
+                    <td width="120">Индивидуальный подход</td>
+                    </tr>
+                    <tr>
+                    <td>1</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>Ж</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td>4</td>
+                    <td>Ж</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>5</td>
+                    <td>Ж</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td>6</td>
+                    <td>М</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                    <td>7</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>8</td>
+                    <td>М</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>9</td>
+                    <td>М</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td>10</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4</td>
+                    </tr>
+                    <tr>
+                    <td>11</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>12</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                    <td>13</td>
+                    <td>Ж</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>14</td>
+                    <td>М</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                    <td>15</td>
+                    <td>М</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>16</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                    <td>17</td>
+                    <td>Ж</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>18</td>
+                    <td>М</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                    <td>19</td>
+                    <td>Ж</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>20</td>
+                    <td>М</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <p>2. Тип шкалы для каждого набора данных.</p>
+                    <p>3. Сформулированные гипотезы (не менее 3).</p>
+                    <p>4. Все этапы анализа, подтверждающего или опровергающего выдвинутые гипотезы (используя методы статистического, факторного и кластерного анализов) .</p>
+                    <p>5. Сформулированные выводы.</p>
+
+                <section class="text-center">
+                    <a href="index.html" class="btn btn-primary btn-lg">Вернуться на главную</a>
+                </section>
+            </article>
+        </main>
+        <script src="dist/index.js"></script>
+    </body>
+</html>
