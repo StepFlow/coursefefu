@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="styles/main.css">
         <meta charset="UTF-8">
         <title>Курс по теме Кластерный и факторный анализ</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
         <main>
@@ -13,193 +16,231 @@
             </aside>
             <article class = "maincontainer">
                 <h1 >Итоговая работа по курсу</h1>
-                    <h3>Выполните задание и составьте отчет о проделаной работе</h3>
-                    <p>1. Таблица с исходными данными.</p>
-                    <table width="511">
-                    <tbody>
-                    <tr>
-                    <td colspan="6" width="511">База данных студентов</td>
-                    </tr>
-                    <tr>
-                    <td width="63">Номер<br /> студента</td>
-                    <td width="35">Пол</td>
-                    <td width="95">Применение</td>
-                    <td width="122">Обеспокоенность</td>
-                    <td width="76">Скучность</td>
-                    <td width="120">Индивидуальный подход</td>
-                    </tr>
-                    <tr>
-                    <td>1</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    </tr>
-                    <tr>
-                    <td>2</td>
-                    <td>Ж</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    </tr>
-                    <tr>
-                    <td>3</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    </tr>
-                    <tr>
-                    <td>4</td>
-                    <td>Ж</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>5</td>
-                    <td>Ж</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>2</td>
-                    </tr>
-                    <tr>
-                    <td>6</td>
-                    <td>М</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>3</td>
-                    </tr>
-                    <tr>
-                    <td>7</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>8</td>
-                    <td>М</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>9</td>
-                    <td>М</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    </tr>
-                    <tr>
-                    <td>10</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>4</td>
-                    </tr>
-                    <tr>
-                    <td>11</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>12</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>3</td>
-                    </tr>
-                    <tr>
-                    <td>13</td>
-                    <td>Ж</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>14</td>
-                    <td>М</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>3</td>
-                    </tr>
-                    <tr>
-                    <td>15</td>
-                    <td>М</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>16</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>3</td>
-                    </tr>
-                    <tr>
-                    <td>17</td>
-                    <td>Ж</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>18</td>
-                    <td>М</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>3</td>
-                    </tr>
-                    <tr>
-                    <td>19</td>
-                    <td>Ж</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td>20</td>
-                    <td>М</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <p>2. Тип шкалы для каждого набора данных.</p>
-                    <p>3. Сформулированные гипотезы (не менее 3).</p>
-                    <p>4. Все этапы анализа, подтверждающего или опровергающего выдвинутые гипотезы (используя методы статистического, факторного и кластерного анализов) .</p>
-                    <p>5. Сформулированные выводы.</p>
-
-                <section class="text-center">
-                    <a href="index.html" class="btn btn-primary btn-lg">Вернуться на главную</a>
+                <h3>Выполните задание и составьте отчет о проделаной работе</h3>
+                <p>1. Таблица с исходными данными.</p>
+                <table width="511">
+                <tbody>
+                <tr>
+                <td colspan="6" width="511">База данных студентов</td>
+                </tr>
+                <tr>
+                <td width="63">Номер<br /> студента</td>
+                <td width="35">Пол</td>
+                <td width="95">Применение</td>
+                <td width="122">Обеспокоенность</td>
+                <td width="76">Скучность</td>
+                <td width="120">Индивидуальный подход</td>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td>М</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Ж</td>
+                <td>3</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td>М</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                </tr>
+                <tr>
+                <td>4</td>
+                <td>Ж</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <td>Ж</td>
+                <td>5</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+                </tr>
+                <tr>
+                <td>6</td>
+                <td>М</td>
+                <td>5</td>
+                <td>4</td>
+                <td>3</td>
+                <td>3</td>
+                </tr>
+                <tr>
+                <td>7</td>
+                <td>М</td>
+                <td>4</td>
+                <td>1</td>
+                <td>4</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>8</td>
+                <td>М</td>
+                <td>3</td>
+                <td>4</td>
+                <td>1</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>9</td>
+                <td>М</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                </tr>
+                <tr>
+                <td>10</td>
+                <td>М</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>11</td>
+                <td>М</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>12</td>
+                <td>М</td>
+                <td>4</td>
+                <td>4</td>
+                <td>2</td>
+                <td>3</td>
+                </tr>
+                <tr>
+                <td>13</td>
+                <td>Ж</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>14</td>
+                <td>М</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                </tr>
+                <tr>
+                <td>15</td>
+                <td>М</td>
+                <td>5</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>16</td>
+                <td>М</td>
+                <td>4</td>
+                <td>5</td>
+                <td>1</td>
+                <td>3</td>
+                </tr>
+                <tr>
+                <td>17</td>
+                <td>Ж</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>18</td>
+                <td>М</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td>3</td>
+                </tr>
+                <tr>
+                <td>19</td>
+                <td>Ж</td>
+                <td>1</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>20</td>
+                <td>М</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                </tr>
+                </tbody>
+                </table>
+                <p>2. Тип шкалы для каждого набора данных.</p>
+                <p>3. Сформулированные гипотезы (не менее 3).</p>
+                <p>4. Все этапы анализа, подтверждающего или опровергающего выдвинутые гипотезы (используя методы статистического, факторного и кластерного анализов) .</p>
+                <p>5. Сформулированные выводы.</p>
+                <section>
+                    
+                </section>
+                <section style="display: flex; justify-content: space-between;">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#report">
+                        Отправить отчет
+                    </button>
+                    <a href="index.html" class="btn btn-primary btn-lg" style="margin-left: 30px;">Вернуться на главную</a>
                 </section>
             </article>
         </main>
+        <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Отправить задание</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Ф.И.О.</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Иванов Иван Иванович">
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Электронная почта</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ivan@example.com">
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlFile1">Отчет</label>
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                    <p>Наши преподаватели проверят ваш отчет и пришлют результаты вам на почту.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+                </div>
+            </div>
+        </div>
         <script src="dist/index.js"></script>
     </body>
 </html>
