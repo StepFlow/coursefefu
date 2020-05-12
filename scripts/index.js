@@ -1,8 +1,8 @@
 import Glide from '@glidejs/glide';
-import Vue from 'vue/dist/vue.common.dev';
-import VueComponent from './components/VueComponent.vue';
-import { firestorePlugin } from 'vuefire'
-Vue.use(firestorePlugin)
+// import Vue from 'vue/dist/vue.common.dev';
+// import VueComponent from './components/VueComponent.vue';
+// import { firestorePlugin } from 'vuefire'
+// Vue.use(firestorePlugin)
 
 const prepodsGlide = document.getElementById('prepods-glide');
 
@@ -24,12 +24,12 @@ if (prepodsGlide) {
     glide.mount();
 }
 
-const lessonsElement = document.getElementById('lessons');
+// const lessonsElement = document.getElementById('lessons');
 
-new Vue({
-    el: lessonsElement,
-    template: `<vue-component></vue-component>`,
-    components: {
-        VueComponent,
-    },
-});
+// new Vue({
+//     el: lessonsElement,
+//     template: `<vue-component></vue-component>`,
+//     components: {
+//         VueComponent,
+//     },
+// });
