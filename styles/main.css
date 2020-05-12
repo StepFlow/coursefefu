@@ -3,6 +3,9 @@ body
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url(http://bgrounds.ru/_include/img/bgs/curls/cerulean-curls.png);
     background-attachment: fixed;
+}
+
+main {
     padding: 10px 0;
 }
 
@@ -79,6 +82,12 @@ body
 
 .review-card__button {
     margin-top: auto;
+}
+
+@media (max-width: 1000px) {
+    main {
+        padding: 0;
+    }
 }
 
 @media (max-width: 575px) {

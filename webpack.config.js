@@ -1,4 +1,5 @@
 const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: './scripts/index.js',
@@ -7,13 +8,19 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
-    // Add `.ts` and `.tsx` as a resolvable extension.
-    extensions: [".ts", ".tsx", ".js"]
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    },
   },
   module: {
     rules: [
-      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-      { test: /\.tsx?$/, loader: "ts-loader" }
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
     ]
-  }
+  },
+  plugins: [
+    new VueLoaderPlugin()
+  ]
 };

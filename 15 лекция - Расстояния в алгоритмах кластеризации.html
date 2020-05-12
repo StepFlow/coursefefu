@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><strong>Расстояния в</strong><span class="apple-converted-space" style="font-weight:bold;">&nbsp;</span><span class="apple-converted-space" style="font-weight:bold;">&nbsp;</span><strong><em>Кластерном анализе</em></strong><strong>.</strong><span class="apple-converted-space">&nbsp;</span><span class="apple-converted-space">&nbsp;</span>В модуле<span class="apple-converted-space">&nbsp;</span><span class="apple-converted-space">&nbsp;</span><em>Кластерный анализ</em><span class="apple-converted-space">&nbsp;</span><span class="apple-converted-space">&nbsp;</span><em>STATISTICA,</em><span class="apple-converted-space" style="font-style:italic;">&nbsp;</span><span class="apple-converted-space" style="font-style:italic;">&nbsp;</span>алгоритм<span class="apple-converted-space">&nbsp;</span><span class="apple-converted-space">&nbsp;</span><em>k</em>-средних для измерения расстояния использует немасштабируемый квадрат евклидова расстояния; например, расстояние D(i,k) наблюдения i кластера k, для M непрерывных переменных X<span style="font-size:9.33pt;"><sub>j</sub></span><span class="apple-converted-space">&nbsp;</span>вычисляется как:</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAAuCAYAAACWEqPeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAfiSURBVHhe7ZzXqxNBFIevotgVxYqoiB0LdsRnX3wRsSuIvTcsiL1X0Acr9oq94x/giy/2il2wggU7NkSP+U3ObDZ7dzdbJ7nJfDC4Z7JZN8l3T87OzKaINIIjR45QUVGRbgXQ/v79S1p8BuIPGTKEI02+o8VntPiFhRafUSn+smXLxFfukiVLuCfFvHnzaPXq1Rxp4kKLz6jO+EuXLi0m/vz588UfhBY/frT4TLYz/oIFC0TfypUruUcTJ1r8BEePHqVBgwZx5M727dtp3LhxHAUD4i9atEiIj4bt5cuXi4yvxVeDFj+BF/F37dolMjJalOLjeCh7gBZfHVr8BCoz/ooVK2jhwoVi2yw+Sh08plGDFj+BKvGRzeW3hrXUkf1+Mv6kSZNoy5YtHBUuNWrUoI8fP3KUomLFiuI9/fXrF/ek0OInUF3jR8HkyZNp8+bNHBU2duJXqlSJvn//LrbLlStHv3//FtsSLX4CLX7Jp3r16vT582eO0tHiOxCn+GvXrjXKmKBt3bp1fLQkU6dOpU2bNnGkAUrFf//+PdWqVYuj8Ny8eZPat2/PkTrizvhr1qwxJMbIjVdmz55dYsXv2rWr8Zrd2r179/gZRM2aNaMnT55wRNSoUSOxz4sXL7iHqF69evTmzRuO0qlWrRp9+fKFoyQVKlSItsb/8OED1axZk6PouHHjBnXo0IEjNagodVatWmV82HJUxwuzZs0qmIxvJ/7z5885SuJHfFzc/vjxI7qMjwsJXFDEQb6KD6yjOkGYNm0abdiwgaP8oXnz5vTo0SOOkkjxGzRoQK9eveJeojp16tDbt285SmEWHxe38r1GcxRfrFE27Sgb/mqshBEfLw7HbdmyJfcU5/r169SpUyeO4ser+Dt27DDelwkTJnCvPzBWL4+BoUy/uIk/duxY49h79uwRfcOGDTP60A4fPiz6VdClSxfj/8VnCtq1a5d2PrLUcRIf+5hLHeAkPqhatSp9/fqVI2fSMv6fP3+obNmyHCXBkFDlypU5SmIVHydRt25djjLz4MGDnBH/2LFjNHDgQI7UINfqoPmVP1PGHz16tJhlNjN06FA6ePAgR2rp3LkzXbt2jaMkbdu2pTt37nCUJOfEB9++faMqVaqI7U+fPokr6DBkEh9cvXpVvGlxkw3xAWZrpfxyyYIX/IqPjH/gwAGO1GMVHxn/9u3bHKWwit+4cWN69uwZNWzYUIhfv359ev36tXgsUvFR6pQpU4ajdKIUHy+uRYsWHDmT7+IDuWQBDYvUvOBH/OHDh9O+ffvEdrYwi48Ru1u3boltK07iA681PlAiPoYz5QfntdSR4t+/f994Lhq+/sw4iX/x4sW055lbjx49eC/vZFN8sHjxYuP8vazV8XJxO2rUKHG8vXv3ck926dixozgfDFy4YR3VscNtVAcozfh+anyz+K1ateLe4hRCxpf4WavjVXx5cRuWnj17GudmbRcuXOC93IH48uLWDeXi//v3j0qXLi067HAT/927d1S7dm2O3Hn8+LF4cWFq/HzL+BKvqzO9lDp4L6ISPyz4DHE+XsSPgsjEt47qhBVfSpqLF7eHDh0yzi9MmzFjhjieV5Dxo6jxMZy5c+dOsT1ixIislzoYzrxy5YrYxtxMplInCnJW/LAZP2pyocaPYlQHk2qYXJO4iY85C8xdSPr27UunT5/mKBqwZOHy5csceRe/SZMm9PTpU47840v8UqVKicDMz58/RfayTmBZL26xVsdLjY/arWnTphyRUePfvXuX2rRpw70pCkF8uR7fD3bijx8/nrZt28ZRkmxm/G7dutGlS5c4SqIi49ut1XEi4bb913X58uV5l3Ss4mNfa8Z/+fKl6McYrMROfOzTunVr7kmR7xNYAFk+yMwtkGt1cCOK/LzQZMaXozqymcfxBw8eLPqQ8fv37y+2T548yY+Go3v37mn/r8z4clRHNqdxfDyW6eLWDV/i87++8LJkAZMOZvH9UAgzt0HX6oCwi9TMpU6/fv0iEz8sXkZ13Mi6+Mj4mHQIQlyL1M6dOycySu/evbknSSbxMTqC5yGLOrFx40Yjm02fPp177THfcxsULX5xUIU4rce3I5D4oCQtSz5//jz16tWLzp49myb+iRMnaMCAARw5s3v3biH1mDFjuCcF7oLCY5AxExij97MeXzJz5kxav349R0mC3oGFUge/IQRQ6uA9yAXs1ur4QZn4oKTdiJJN8bEeHz8P6Besx8fxoxQfx5M1fj6Ij+oDVYgfQolfEjlz5gz16dNHbHsRH6XOyJEjxfoXq/j4hQNINGXKFO6xx3wHVtBmFR8E/ZUFWerkgvgY2cNAhxY/ZqISf+vWrTRx4kSRdd3Ej+KeWzQ78YMC8XHM48ePc0/2gPg4l4cPH3KPGrT4AcTHmLm8ESWT+JrcRIvvIj6W9GIiCNiJjzID5Yam5KHF9ym++Z7boOK7jePjAhhf/bgu0MSHFt+H+BASC8EkcWX8OXPmaPFjpuDEB6dOnRILs9zE379/v7htT2IVX17c+kH+ykKmCSwtfvxo8W3Ex43ZEFQ2u4tb8+N+Lm69zNxq8eNHi+9S6sSBWXzzPbey4VtBix8/BSs+JMM6FZVYlyxo8bOHFl8hXtbqyFEdNEx+aeJBi68AZO+5c+d6El+jhoIUH2Aprkrx8YcWZJGaJh60+JqCRIuvKUCI/gOyqGIZfTbQQAAAAABJRU5ErkJggg==" alt="ClusterEq1New"></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">где<span class="apple-converted-space">&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAMAAABLXLayAAADAFBMVEUAAACAgICAAACAgAAAgAAAgIAAAICAAICAgEAAQEAAgP8AQIBAAP+AQAD////AwMD/AAD//wAA/wAA//8AAP//AP///4AA/4CA//+AgP//AID/gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkHZX0AAAAAWJLR0QAiAUdSAAAAAxjbVBQSkNtcDA3MTIAAAADSABzvAAAAHJJREFUKFONUUsWACEI6gTe/7jzJPzguKhFTyER7ZjZyeMJAAR+y7nwyjUY1S56laOEKAT5OqPJ3c7hAkKB0BStpNtwXfLis0bJKOaj9DKqG/jtIH11TuRruKnJdWApYnjp0xqv/0DtyfX8ndO/1jrdzwey8xjjsWqoewAAAABJRU5ErkJggg==" alt="ClusterEqPart"><span class="apple-converted-space">&nbsp;</span>среднее значение переменной j и кластера k.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Отметьте, что в этом уравнении переменная <span class="apple-converted-space">&nbsp;</span><em>X</em><em><span style="font-size:9.33pt;"><sub>j</sub></span></em><span class="apple-converted-space">&nbsp;</span><span class="apple-converted-space">&nbsp;</span>не изменяет масштаб в любом случае; отсюда, общее расстояние зависит от переменных, которые дают наибольший интервал значений, в сравнении с другими переменными того же кластерного анализа. Например, если у вас имеются собранные данные Роста и Веса человека для кластерного анализа, и Вес измеряется в миллиметрах (например, большинство участвующих имеют рост от 1,500 до 2,000 миллиметров), а вес - в килограммах (большинство участвующих имеют вес от 48 до 100 килограмм), в результате, расстояние будет зависеть от роста человека (т.к. больше интервал значений).</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><strong>Расстояния в&nbsp;</strong><span class="apple-converted-space" style="font-weight:bold;">&nbsp;</span><strong><em>обобщенном</em></strong><strong><em>&nbsp;&nbsp;</em></strong><strong><em>кластерном анализе</em></strong><strong>.</strong><span class="apple-converted-space">&nbsp;</span>Кластеризация методом K-средних в модуле<span class="apple-converted-space">&nbsp;</span><em>Обобщенные методы кластерного анализа</em><span class="apple-converted-space">&nbsp;</span>предлагает разные методы вычисления расстояния между наблюдениями и центрами кластеров. В дополнение, вы можете включить категориальные переменные в список переменных, используемых для кластеризации. Это возможно потому, что как описано в разделе справки Обобщенные методы кластерного анализа - Стартовая панель - Вкладка k-средние, расстояние в этом модуле всегда вычисляется из нормализованного числа, т.е., значения в интервале от 0 до 1. Особенно, для всех непрерывных переменных, расстояние вычисляется для трансформированных (измененных в масштабе) значений X<span style="font-size:9.33pt;"><sub>i</sub></span>, то тогда:</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><img src="data:image/png;base64,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" alt="ClusterEq2New"></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Где<span class="apple-converted-space">&nbsp;</span><em>Min(X</em><em><span style="font-size:9.33pt;"><sub>j</sub></span></em><span class="apple-converted-space" style="font-size:9.33pt; font-style:italic; vertical-align:sub;">&nbsp;</span><em>)</em><span class="apple-converted-space">&nbsp;</span>и<span class="apple-converted-space">&nbsp;</span><em>Max(X</em><em><span style="font-size:9.33pt;"><sub>j</sub></span></em><span class="apple-converted-space" style="font-size:9.33pt; font-style:italic; vertical-align:sub;">&nbsp;</span><em>)</em><span class="apple-converted-space">&nbsp;</span>соответственно минимальное и максимальное значение переменной<span class="apple-converted-space">&nbsp;</span><em>i</em>. Для категориальных переменных все расстояния могут быть 0 (ноль) или 1 (один); 0, если класс, которому принадлежит соответствующее наблюдение, принадлежит в тоже время к классу, в котором встречается лучшая частота соответствующего кластера, и 1, если он отличает от такого класса.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Отметьте, что в этих вычислениях, разница в интервалах (масштабе) переменных будет &quot;удалена&quot; с помощью нормализованной трансформации, показанной выше. Вернемся к предыдущему примеру: если вы измеряете Рост в миллиметрах, а Вес в килограммах, обе величины будут одинаково влиять на расстояние, по которому определяется решение кластера. Следовательно, вы можете ожидать различных результатов во время представления результатов кластерного анализа k-средних модуля<span class="apple-converted-space">&nbsp;</span><em>Кластерный анализ</em><span class="apple-converted-space">&nbsp;</span>в сравнении с модулем<span class="apple-converted-space">&nbsp;</span><em>Обобщенные методы кластерного анализа</em>.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><strong>Замечание по EM кластеризации</strong><strong><span style="color:#000080;">.</span></strong><span class="apple-converted-space">&nbsp;</span>Алгоритм EM кластеризации не основан на расстоянии. Вместо этого, программа вычисляет вероятность принадлежности каждого наблюдения к каждому кластеру, основанную на выбранном распределении. (по умолчанию нормальное распределение); Конечная цель алгоритма EM кластеризации найти для кластеров решения, которые максимизируют полную вероятность данных, задаваемых конечным решением кластера. Отсюда, в EM кластеризации, любая разница в масштабе или интервале переменной, выбранной для анализа не будет влиять на результат.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><strong>Как интерпретировать разницу результатов.</strong><span class="apple-converted-space">&nbsp;</span>Давая различия в пути, по которому разные модули считают расстояние для кластеризации методом<span class="apple-converted-space">&nbsp;</span><em>k</em>-средних, какой метод &quot;правильный?&quot;<span class="apple-converted-space">&nbsp;</span> <span class="apple-converted-space">&nbsp;</span>Как всегда, однозначного ответа нет. Различия для анализа в отличиях на интервалах значений переменных, нормализация, представимая модулем<span class="apple-converted-space">&nbsp;</span><em>Обобщенные методы кластерного анализа</em><span class="apple-converted-space">&nbsp;</span>удаляет эти различия. Например, если ваш анализ базируется на откликах на пункты анкеты, каждый из которых сопровождается таким же 5-точечным масштабом, разница в интервалах значений для различных пунктов может быть значительной. Однако, в обсуждавшемся ранее примере с измерением Роста и Веса (т.е., двух совершенно различных параметров) эта разница (в интервале значений) не может быть полезна (из-за их случайности и всецело зависит от выбора наблюдателем метрики).<span class="apple-converted-space">&nbsp;</span>&nbsp;</p>
+    </div>
+</body>
+
+</html>

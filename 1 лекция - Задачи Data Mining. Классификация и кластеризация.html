@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3 style="margin-left:0pt; text-indent:0pt; text-align:justify; line-height:150%; background-color:#fcf8e4;"><a id="_Задачи_Data_Mining."></a>Задачи Data Mining. Классификация и кластеризация</h3>
+        <p style="text-align:justify; line-height:150%; font-size:14pt;"><a href="http://www.intuit.ru/studies/courses/6/6/lecture/83?page=1#sect2" style="text-decoration:none;" title="Задача классификации"><strong><span style="color:#000000;">Задача классификац</span></strong></a><strong>ии.</strong> Классификация&nbsp;является наиболее простой и одновременно наиболее часто решаемой задачей&nbsp;Data&nbsp;Mining. Ввиду распространенности задач&nbsp;классификации&nbsp;необходимо четкое понимание сути этого понятия.</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt;"><a href="http://www.intuit.ru/studies/courses/6/6/lecture/83?page=2#sect3" style="text-decoration:none;" title="Процесс классификации"><strong><span style="color:#000000;">Процесс классификации.</span></strong></a> Подробно рассматриваются две задачи Data Mining - классификация и кластеризация. Описаны суть задач, процесс решения, методы решения, применение. Приведено сравнение двух рассмотренных задач.</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt;">Методы, применяемые для решения задач классификации</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Для&nbsp;классификации&nbsp;используются различные методы. Основные из них:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">классификация</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">с помощью деревьев решений;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">байесовская (наивная)</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">классификация</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">классификация</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">при помощи</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">искусственных нейронных сетей;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">классификация</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">методом</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">опорных векторов;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">статистические методы, в частности, линейная регрессия;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">классификация</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">при помощи метода ближайшего соседа;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">классификация</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">CBR-методом;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">классификация</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">при помощи</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">генетических алгоритмов.</span></li>
+        </ul>
+        <p style="margin-top:1.8pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; font-size:14pt;"><strong>Точность классификации:</strong> оценка уровня ошибок</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Оценка точности классификации может проводиться при помощи кросс-проверки. Кросс-проверка (Cross-validation) - это процедура оценки точности&nbsp;классификации&nbsp;на данных из тестового&nbsp;множества, которое также называют кросс - проверочным множеством. Точность классификации тестового множества сравнивается с точностью классификации обучающего множества. Если классификация тестового множества дает приблизительно такие же результаты по точности, как и классификация обучающего множества, считается, что данная модель прошла кросс-проверку.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Разделение на обучающее и тестовое множества осуществляется путем деления выборки в определенной пропорции, например обучающее множество - две трети данных и тестовое - одна треть данных. Этот способ следует использовать для выборок с большим количеством примеров. Если же выборка имеет малые объемы, рекомендуется применять специальные методы, при использовании которых обучающая и тестовая выборки могут частично пересекаться.</p>
+        <h3 style="margin-top:3.75pt; margin-left:0pt; margin-bottom:3.75pt; text-indent:0pt; text-align:justify; line-height:150%; background-color:#ffffff;">Оценивание классификационных методов</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Оценивание методов следует проводить, исходя из следующих характеристик: скорость, робастность, интерпретируемость, надежность.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Скорость</strong> характеризует время, которое требуется на создание модели и ее использование.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Робастность</strong>, т.е. устойчивость к каким-либо нарушениям исходных предпосылок, означает возможность работы с зашумленными данными и пропущенными значениями в данных.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Интерпретируемость</strong> обеспечивает возможность понимания модели аналитиком.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Свойства классификационных правил:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">размер дерева решений;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">компактность классификационных правил.</span></li>
+        </ul>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Надежность методов классификации предусматривает возможность работы этих методов при наличии в наборе данных шумов и выбросов.</p>
+        <h3 style="margin-top:3.75pt; margin-left:0pt; margin-bottom:3.75pt; text-indent:0pt; text-align:left; line-height:150%; background-color:#ffffff;">Задача кластеризации</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В этой части лекции мы введем понятия кластеризации, кластера, кратко рассмотрим классы методов, с помощью которых решается задача кластеризации, некоторые моменты процесса кластеризации, а также разберем примеры применения кластерного анализа.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Задача кластеризации сходна с задачей классификации, является ее логическим продолжением, но ее отличие в том, что классы изучаемого набора данных заранее не предопределены.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Синонимами термина &quot;кластеризация&quot; являются &quot;автоматическая классификация&quot;, &quot;обучение без учителя&quot; и &quot;таксономия&quot;.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кластеризация предназначена для разбиения совокупности объектов на однородные группы (кластеры или классы). Если данные выборки представить как точки в признаковом пространстве, то задача кластеризации сводится к определению &quot;сгущений точек&quot;.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Цель кластеризации &ndash; поиск существующих структур.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кластеризация является описательной процедурой, она не делает никаких статистических выводов, но дает возможность провести разведочный анализ&nbsp; и изучить &quot;структуру данных&quot;.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Само понятие &quot;<strong>кластер</strong>&quot; определено неоднозначно: в каждом исследовании свои &quot;кластеры&quot;. Переводится понятие кластер(<a id="keyword123"></a>cluster) как &quot;скопление&quot;, &quot;гроздь&quot;.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword124"></a>Кластер можно охарактеризовать как группу объектов, имеющих общие свойства.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Характеристиками</strong><a id="keyword125"></a><strong>&nbsp;кластера&nbsp;</strong>можно назвать два признака:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">внутренняя однородность;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">внешняя изолированность.</span></li>
+        </ul>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Вопрос, задаваемый аналитиками при решении многих задач, состоит в том, как организовать данные в наглядные структуры, т.е. развернуть таксономии.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Наибольшее применение<a id="keyword126"></a> кластеризация первоначально получила в таких науках как биология, антропология, психология. Для решения экономических задач<a id="keyword127"></a> кластеризация длительное время мало использовалась из-за специфики экономических данных и явлений.</p>
+        <h3 style="margin-top:3.75pt; margin-left:0pt; margin-bottom:3.75pt; text-indent:0pt; text-align:justify; line-height:150%; background-color:#ffffff;">Оценка качества кластеризации</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Оценка качества<a id="keyword153"></a> кластеризации может быть проведена на основе следующих процедур:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">ручная проверка;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">установление контрольных точек и проверка на полученных</span><a id="keyword154"></a><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;кластерах;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">определение стабильности</span><a id="keyword155"></a><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;кластеризации путем добавления в модель новых переменных;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">создание и сравнение</span><a id="keyword156"></a><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;кластеров с использованием различных методов. Разные методы</span><a id="keyword157"></a><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;кластеризации могут создавать разные</span><a id="keyword158"></a><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;кластеры, и это является нормальным явлением. Однако создание схожих</span><a id="keyword159"></a><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;кластеров</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">различными методами указывает на правильность</span><a id="keyword160"></a><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;кластеризации.</span></li>
+        </ul>
+        <h3 style="margin-top:3.75pt; margin-left:6pt; margin-bottom:3.75pt; text-indent:0pt; text-align:justify; line-height:150%; background-color:#ffffff;">Процесс кластеризации</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Процесс<a id="keyword161"></a> кластеризации зависит от выбранного метода и почти всегда является итеративным. Он может стать увлекательным процессом и включать множество экспериментов по выбору разнообразных параметров, например, меры расстояния, типа стандартизации переменных, количествакластерови т.д. Однако эксперименты не должны быть самоцелью - ведь конечной целью&nbsp;<a id="keyword163"></a>кластеризации&nbsp;является получение содержательных сведений о структуре исследуемых данных. Полученные результаты требуют дальнейшей интерпретации, исследования и изучения свойств и характеристик объектов для возможности точного описания сформированных&nbsp;<a id="keyword164"></a>кластеров.</p>
+        <div style="margin-top:3.75pt; margin-left:127.6pt; margin-bottom:3.75pt; background-color:#ffffff;">
+            <h3 style="margin-left:36pt; text-align:justify; line-height:150%;"><a id="sect10"></a><span style="font-weight:normal;">Применение кластерного анализа</span></h3>
+        </div>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кластерный&nbsp;<a id="keyword165"></a>анализ&nbsp;применяется в различных областях. Он полезен, когда нужно классифицировать большое&nbsp;<a id="keyword166"></a>количество информации. Обзор многих опубликованных исследований, проводимых с помощью кластерного анализа, дал Хартиган (Hartigan, 1975).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Так, в медицине используется&nbsp;<a id="keyword167"></a>кластеризация&nbsp;заболеваний, лечения заболеваний или их симптомов, а также&nbsp;<a id="keyword168"></a>таксономияпациентов, препаратов и т.д. В археологии устанавливаются таксономии каменных сооружений и древних объектов и т.д. В маркетинге это может быть задача сегментации конкурентов и потребителей. В менеджменте примером задачи&nbsp;<a id="keyword169"></a>кластеризациибудет&nbsp;<a id="keyword170"></a>разбиение&nbsp;персонала на различные группы,&nbsp;<a id="keyword171"></a>классификация&nbsp;потребителей и поставщиков, выявление схожих производственных ситуаций, при которых возникает брак. В медицине -&nbsp;<a id="keyword172"></a>классификация&nbsp;симптомов. В социологии задача<a id="keyword173"></a>кластеризации&nbsp;-&nbsp;<a id="keyword174"></a>разбиение&nbsp;респондентов на однородные группы.</p>
+        <h4 style="text-align:justify; line-height:150%; background-color:#ffffff;"><span style="font-weight:normal;">Кластерный анализ в маркетинговых исследованиях</span></h4>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В маркетинговых исследованиях кластерный анализ применяется достаточно широко - как в теоретических исследованиях, так и практикующими маркетологами, решающими проблемы группировки различных объектов. При этом решаются вопросы о группах клиентов, продуктов и т.д.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Так, одной из наиболее важных задач при применении кластерного анализа в маркетинговых исследованиях является анализ поведения потребителя, а именно: группировка потребителей в однородные классы для получения максимально полного представления о поведении клиента из каждой группы и о факторах, влияющих на его поведение. Эта проблема подробно описана в работах Клакстона, Фрая и Портиса (1974), Киля и Лэйтона (1981).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Важной задачей, которую может решить кластерный анализ, является позиционирование, т.е. определение ниши, в которой следует позиционировать новый продукт, предлагаемый на рынке. В результате применения кластерного анализа строится карта, по которой можно определить уровень конкуренции в различных сегментах рынка и соответствующие характеристики товара для возможности попадания в этот сегмент. С помощью анализа такой карты возможно определение новых, незанятых ниш на рынке, в которых можно предлагать существующие товары или разрабатывать новые.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кластерный анализ также может быть удобен, например, для анализа клиентов компании. Для этого все клиенты группируются в<a id="keyword175"></a>кластеры, и для каждого&nbsp;<a id="keyword176"></a>кластера&nbsp;вырабатывается индивидуальная политика. Такой подход позволяет существенно сократить объекты анализа, и, в то же время, индивидуально подойти к каждой группе клиентов.</p>
+        <h4 style="text-align:justify; line-height:150%; background-color:#ffffff;"><a id="sect12"></a><span style="font-weight:normal;">Практика применения кластерного анализа в маркетинговых исследованиях</span></h4>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Приведем некоторые известные статьи, посвященные применению кластерного анализа для маркетинговых исследований.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В 1971 году была опубликована статья о сегментации клиентов по сфере интересов на основе данных, характеризующих предпочтения клиентов.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В 1974 году была опубликована статья Секстона (Sexton), целью которой была идентификация групп семей - потребителей продукта, в результате были разработаны стратегии позиционирования бренда. Основой для исследований были рейтинги, которые респонденты присваивали продуктам и брендам.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В 1981 году была опубликована статья, где проводился анализ поведения покупателей новых автомобилей на основе данных факторных нагрузок, полученных при анализе набора переменных.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">&nbsp;</p>
+    </div>
+</body>
+
+</html>

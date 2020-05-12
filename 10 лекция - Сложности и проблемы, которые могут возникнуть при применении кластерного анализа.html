@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h3 style="margin-top:3.75pt; margin-left:0pt; margin-bottom:3.75pt; text-indent:0pt; line-height:150%; background-color:#ffffff;">Сложности и проблемы, которые могут возникнуть при применении кластерного анализа</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Как и любые другие методы, методы кластерного анализа имеют определенные слабые стороны, т.е. некоторые сложности, проблемы и ограничения.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">При проведении кластерного анализа следует учитывать, что результаты кластеризации зависят от критериев разбиения совокупности исходных данных. При понижении размерности данных могут возникнуть определенные искажения, за счет обобщений могут потеряться некоторые индивидуальные характеристики объектов.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Существует ряд сложностей, которые следует продумать перед проведением кластеризации.</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Сложность выбора характеристик, на основе которых проводится кластеризация. Необдуманный выбор приводит к неадекватному разбиению на кластеры и, как следствие, - к неверному решению задачи.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Сложность выбора метода кластеризации. Этот выбор требует неплохого знания методов и предпосылок их использования. Чтобы проверить эффективность конкретного метода в определенной предметной области, целесообразно применить следующую процедуру: рассматривают несколько априори различных между собой групп и перемешивают их представителей между собой случайным образом. Далее проводится кластеризация для восстановления исходного разбиения на кластеры. Доля совпадений объектов в выявленных и исходных группах является показателем эффективности работы метода.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Проблема выбора числа кластеров. Если нет никаких сведений относительно возможного числа кластеров, необходимо провести ряд экспериментов и, в результате перебора различного числа кластеров, выбрать оптимальное их число.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Проблема интерпретации результатов кластеризации. Форма кластеров в большинстве случаев определяется выбором метода объединения. Однако следует учитывать, что конкретные методы стремятся создавать кластеры определенных форм, даже если в исследуемом наборе данных кластеров на самом деле нет.</span></li>
+        </ul>
+    </div>
+</body>
+
+</html>

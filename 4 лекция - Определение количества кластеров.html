@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h4 style="text-align:justify; line-height:150%; background-color:#ffffff;"><a id="sect8"></a>Определение количества кластеров</h4>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Существует проблема определения числа кластеров. Иногда можно априорно определить это число. Однако в большинстве случаев число кластеров определяется в процессе агломерации/разделения множества объектов.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Процессу группировки объектов в иерархическом кластерном анализе соответствует постепенное возрастание коэффициента, называемого критерием Е. Скачкообразное увеличение значения критерия Е можно определить как характеристику числа кластеров, которые действительно существуют в исследуемом наборе данных. Таким образом, этот способ сводится к определению скачкообразного увеличения некоторого коэффициента, который характеризует переход от сильно связанного к слабо связанному состоянию объектов.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В<span class="apple-converted-space">&nbsp;</span><a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=4#table.13.2" style="text-decoration:none;" target="_blank"><span class="Hyperlink" style="color:#0071a6;">таблице 13.2</span></a><span class="apple-converted-space">&nbsp;</span>мы видим, что значение поля<span class="apple-converted-space">&nbsp;</span><a id="keyword120"></a><span class="keyword" style="font-style:italic;">Coefficients</span><span class="apple-converted-space">&nbsp;</span>увеличивается скачкообразно, следовательно, объединение в кластеры следует остановить, иначе будет происходить объединение кластеров, находящихся на относительно большом расстоянии друг от друга.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В нашем примере это скачок с 1,217 до 7,516. Оптимальным считается количество кластеров, равное разности количества наблюдений (14) и количества шагов до скачкообразного увеличения коэффициента (12).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Следовательно, после создания двух кластеров объединений больше производить не следует, хотя визуально мы ожидали появления трех кластеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Агрегирование данных может быть представлено графически в виде<span class="apple-converted-space">&nbsp;</span><a id="keyword121"></a><span class="keyword" style="font-style:italic;">дендрограммы</span>. Она определяет объединенные кластеры и значения коэффициентов на каждом шаге агломерации (отображены значения коэффициентов, приведенные к шкале от 0 до 25).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword122"></a><span class="keyword" style="font-style:italic;">Дендрограмма</span><span class="apple-converted-space">&nbsp;</span>для нашего примера приведена на<span class="apple-converted-space">&nbsp;</span><a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=4#image.13.5" style="text-decoration:none;" target="_blank"><span class="Hyperlink" style="color:#0071a6;">рис. 13.5</span></a>. Разрез дерева агрегирования вертикальной чертой дал нам два кластера, состоящих из 9 и 5 объектов.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">На верхней линии по горизонтали отмечены номера шагов алгоритма, всего алгоритму потребовалось 25 шагов для объединения всех объектов в один кластер.</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="image.13.5"></a><img src="data:image/png;base64,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" alt="Дендрограмма процесса слияния"></p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><br><strong>Рис.5.</strong><span class="apple-converted-space" style="font-weight:bold;">&nbsp;</span>Дендрограмма процесса слияния</p>
+        <p style="margin-left:36pt; text-align:justify; line-height:150%; font-size:14pt;">&nbsp;</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">При большом количестве наблюдений иерархические методы кластерного анализа не пригодны. В таких случаях используют неиерархические методы, основанные на разделении, которые представляют собой<span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-weight:bold; font-style:italic;">итеративные методы</span><span class="apple-converted-space">&nbsp;</span>дробления исходной совокупности. В процессе деления новые кластеры формируются до тех пор, пока не будет выполнено<span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">правило остановки</span>.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Такая неиерархическая<span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">кластеризация</span><span class="apple-converted-space">&nbsp;</span>состоит в разделении набора данных на определенное количество отдельных кластеров. Существует два подхода. Первый заключается в определении границ кластеров как наиболее плотных участков в многомерном пространстве исходных данных, т.е.<span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">определение</span><span class="apple-converted-space">&nbsp;</span>кластера там, где имеется большое &quot;сгущение точек&quot;. Второй подход заключается в минимизации меры различия объектов</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h4 style="text-align:justify; line-height:150%; background-color:#ffffff;"><a id="sect11"></a>Сравнительный анализ иерархических и неиерархических методов кластеризации</h4>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Перед проведением кластеризации у аналитика может возникнуть вопрос, какой группе методов кластерного анализа отдать предпочтение. Выбирая между иерархическими и неиерархическими методами, необходимо учитывать следующие их особенности.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Неиерархические методы</strong><span class="apple-converted-space">&nbsp;</span>выявляют более высокую устойчивость по отношению к шумам и выбросам, некорректному выбору метрики, включению незначимых переменных в набор, участвующий в кластеризации. Ценой, которую приходится платить за эти достоинства метода, является слово &quot;априори&quot;. Аналитик должен заранее определить количество кластеров, количество итераций или правило остановки, а также некоторые другие параметры кластеризации. Это особенно сложно начинающим специалистам.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Если нет предположений относительно числа кластеров, рекомендуют использовать иерархические алгоритмы. Однако если объем выборки не позволяет это сделать, возможный путь - проведение ряда экспериментов с различным количеством кластеров, например, начать разбиение совокупности данных с двух групп и, постепенно увеличивая их количество, сравнивать результаты. За счет такого &quot;варьирования&quot; результатов достигается достаточно большая гибкость кластеризации.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Иерархические методы</strong>, в отличие от неиерархических, отказываются от определения числа кластеров, а строят полное дерево вложенных кластеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Сложности иерархических методов кластеризации: ограничение объема набора данных; выбор меры близости; негибкость полученных классификаций.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Преимущество этой группы методов в сравнении с неиерархическими методами - их наглядность и возможность получить детальное представление о структуре данных.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">При использовании иерархических методов существует возможность достаточно легко идентифицировать выбросы в наборе данных и, в результате, повысить качество данных. Эта процедура лежит в основе двух шагового алгоритма кластеризации. Такой набор данных в дальнейшем может быть использован для проведения неиерархической кластеризации.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Существует еще один аспект, о котором уже упоминалось в этой лекции. Это вопрос кластеризации всей совокупности данных или же ее выборки. Названный аспект существенен для обеих рассматриваемых групп методов, однако он более критичен для иерархических методов. Иерархические методы не могут работать с большими наборами данных, а использование некоторой выборки, т.е. части данных, могло бы позволить применять эти методы.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Результаты кластеризации могут не иметь достаточного статистического обоснования. С другой стороны, при решении задач кластеризации допустима нестатистическая интерпретация полученных результатов, а также достаточно большое разнообразие вариантов понятия кластера. Такая нестатистическая интерпретация дает возможность аналитику получить удовлетворяющие его результаты кластеризации, что при использовании других методов часто бывает затруднительным.</p>
+    </div>
+</body>
+
+</html>

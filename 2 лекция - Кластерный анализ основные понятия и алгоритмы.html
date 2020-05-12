@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        
+    
+
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"> <b>Кластерный анализ основные понятия и алгоритмы</p></b>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В модуле рассматриваются основы кластерного анализа, математические характеристики кластера. Описаны две группы иерархического кластерного анализа: агломеративные и дивизимные методы. Приведен пример иерархического кластерного анализа в SPSS.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Опишем понятие &quot;<a id="keyword1"></a>кластер&quot; с математической точки зрения, а также рассмотрим методы решения задач кластеризации - методы кластерного анализа.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Термин кластерный&nbsp;<a id="keyword2"></a>анализ, впервые введенный Трионом (Tryon) в 1939 году, включает в себя более 100 различных алгоритмов.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В отличие от задач классификации, кластерный&nbsp;<a id="keyword3"></a>анализ&nbsp;не требует априорных предположений о наборе данных, не накладывает ограничения на&nbsp;<a id="keyword4"></a>представление&nbsp;исследуемых объектов, позволяет анализировать показатели различных типов данных (интервальным данным, частотам, бинарным данным). При этом необходимо помнить, что переменные должны измеряться в сравнимых шкалах.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кластерный&nbsp;<a id="keyword5"></a>анализ&nbsp;позволяет сокращать&nbsp;<a id="keyword6"></a>размерность&nbsp;данных, делать ее наглядной.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кластерный&nbsp;<a id="keyword7"></a>анализ&nbsp;может применяться к совокупностям временных рядов, здесь могут выделяться периоды схожести некоторых показателей и определяться группы временных рядов со схожей динамикой.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кластерный&nbsp;<a id="keyword8"></a>анализ&nbsp;параллельно развивался в нескольких направлениях, таких как биология, психология, др., поэтому у большинства методов существует по два и более названий. Это существенно затрудняет работу при использовании кластерного анализа.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Задачи кластерного анализа можно объединить в следующие группы:</p>
+        <ol style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:21.5pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:2.5pt; font-size:14pt; background-color:#ffffff;">Разработка типологии или классификации.</li>
+            <li style="margin-top:1.8pt; margin-left:21.5pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:2.5pt; font-size:14pt; background-color:#ffffff;">Исследование полезных концептуальных схем группирования объектов.</li>
+            <li style="margin-top:1.8pt; margin-left:21.5pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:2.5pt; font-size:14pt; background-color:#ffffff;">Представление гипотез на основе исследования данных.</li>
+            <li style="margin-top:1.8pt; margin-left:21.5pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:2.5pt; font-size:14pt; background-color:#ffffff;">Проверка гипотез или исследований для определения, действительно ли типы (группы), выделенные тем или иным способом, присутствуют в имеющихся данных.</li>
+        </ol>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Как правило, при практическом использовании кластерного анализа одновременно решается несколько из указанных задач.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Рассмотрим пример процедуры кластерного анализа.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Допустим, мы имеем набор данных А, состоящий из 14-ти примеров, у которых имеется по два признака X и Y. Данные по ним приведены в&nbsp;<a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=1#table.13.1" style="text-decoration:none;" target="_blank"><span style="color:#000000;">таблице.1</span></a>.</p>
+        <table style="border:0.75pt solid #000000; border-spacing:0.7pt;">
+            <tbody>
+                <tr>
+                    <td colspan="3" style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><a id="table_13.1"></a>Таблица .1. Набор данных А</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">№ примера</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">признак X</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">признак Y</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">27</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">19</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">2</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">11</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">46</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">3</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">25</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">15</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">4</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">36</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">27</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">5</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">35</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">25</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">6</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">10</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">43</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">7</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">11</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">44</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">8</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">36</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">24</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">9</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">26</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">14</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">10</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">26</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">14</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">11</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">9</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">45</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">12</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">33</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">23</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">13</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">27</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">16</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">14</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">10</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">47</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Данные в табличной форме не носят информативный характер. Представим переменные X и Y в виде диаграммы рассеивания, изображенной на&nbsp;<a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=1#image.13.1" style="text-decoration:none;" target="_blank"><span style="color:#000000;">рис.1</span></a>.</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="image.13.1"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVAAAAEuCAYAAADYwEpoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAADIHSURBVHhe7Z15kBT1/fefVCXPryoJSaXyB/FnKkZTuazE1OOdaFBEISqeoHghonggcgWQQ1EEQSOgeAECIvchp9wsLHKLKIeKIIggl+ABiHgF1M/Tr/52L+sKstvTM9PT835Vde1091w7u/Puz/39PyaEECISElAhhIiIBFQIISIiARVCiIhIQIUQIiISUCGEiIgEVAghIiIBFUKIiEhAhRAiIhJQIYSIiARUCCEiIgEVQoiISECFECIiElAhhIiIBFQIISIiARVCiIjkREBXrVpltWvXtmrVqtnPf/5ze/311+2LL76wv/zlL/7+v/71L/vvf/8b3FsIIQqDnAno888/b9u3bw+OmHXs2NHee+89//bSpUvtmWee8W8LIUShkBMBRSAnTpxo77//fnDk2wI6d+5cGz58uH9bCCEKhZwI6JNPPmmPPvqolZaW2ttvv20HDhywdu3a2Y4dO/zzy5Yts379+vm3hRCiUMiJgN5///1Wo0YNq1evnt1zzz2+JdqyZcsyAV20aJENGjTIv717926bNm2ajR8/Xps2bdoy2mbOnPmt0GHc5ERAlyxZYm+99ZZ/+6GHHvKt0A4dOpS58C+++KINGTLEv401Wr16dfvRj35kp5xyijVp0kSbNm3aIm0NGjSwyZMn+9qSDSoloO+8845NnTrVNm/ebF9//XVw1OzVV1/1Y5dffvllcOTodOnSxdatW2etW7e2jz76yD+2YMGCMhd+y5Yt/n1uvPFG69Onj39MCCGiQPJ6+vTpwV78VEpAX3nlFbvyyivtscces48//tg/tnfvXqtfv75dffXVfknS97FixQrbtGmTfxtxRIjvvPPObwnoc889598OwSqteEwIIapCIgR0//791r59e7vwwgt9d/zgwYM2cOBAO+aYY/zE0NFACBHEbdu22VNPPWU7d+60Nm3alMVAOffss8/6t0MkoEKITEmEgAKCVqdOHRs8eLB9+OGH1qhRIz8pVJkC+Hnz5tldd93lF8z36tXL9uzZY6tXr7Zbb73Vrr32Wt8aJS5anqIW0DffNOvUqXLb3LnBg4QQFUmMgGKFNm7c2G6/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" alt="Диаграмма рассеивания переменных X и Y"></p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Рис..1.&nbsp;Диаграмма рассеивания переменных X и Y</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">На рисунке мы видим несколько групп &quot;похожих&quot; примеров. Примеры (объекты), которые по значениям X и Y &quot;похожи&quot; друг на друга, принадлежат к одной группе (кластеру); объекты из разных кластеров не похожи друг на друга.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Критерием для определения схожести и различия кластеров является&nbsp;<a id="keyword9"></a> расстояние между точками на диаграмме рассеивания. Это сходство можно &quot;измерить&quot;, оно равно расстоянию между точками на графике. Способов определения<a id="keyword10"></a> меры расстояния между кластерами, называемой еще мерой близости, существует несколько. Наиболее распространенный способ &ndash;&nbsp;<a id="keyword11"></a>вычисление<a id="keyword12"></a> евклидова расстояния между двумя точками i и j на плоскости, когда известны их&nbsp;<a id="keyword13"></a>координаты&nbsp;X и Y:</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><img src="data:image/png;base64,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" alt="D_{ij}=\sqrt{(x_{i}-x_{j})^2+(y_{i}-y_{j})^2},">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Примечание: чтобы узнать<a id="keyword14"></a> расстояние между двумя точками, надо взять разницу их координат по каждой оси, возвести ее в квадрат, сложить полученные значения для всех осей и извлечь квадратный корень из суммы.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Когда осей больше, чем две,<a id="keyword15"></a> расстояние рассчитывается таким образом: сумма квадратов разницы координат состоит из стольких слагаемых, сколько осей (измерений) присутствует в нашем пространстве. Например, если нам нужно найти&nbsp;<a id="keyword16"></a>расстояние&nbsp;между двумя точками в пространстве трех измерений (такая ситуация представлена на&nbsp;<a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=1#image.13.2" style="text-decoration:none;" target="_blank"><span style="color:#000000;">рис. 13.2</span></a>), формула (13.1) приобретает вид:</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><img src="data:image/png;base64,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" alt="D=\sqrt{(x_{1}-x_{2})^2+(y_{1}-y_{2})^2+(z_{1}-z_{2})^2},"></p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">(13.2)</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="image.13.2"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADzAQMAAACcxjnMAAAAA3NCSVQBAQF8LneCAAAABlBMVEUAAAD///+l2Z/dAAAADGNtUFBKQ21wMDcxMgAAAAdPbbelAAAAAnRSTlP/AOW3MEoAAAABYktHRAH/Ai3eAAAFK0lEQVRo3u3Yv2/cZBgH8KAOWVCysSTEbCxISGSgqBH3D1TiT0AsLVsiMYSoKW/bSNyC8BwhtRPqeEMQN0TgRIfipcITKlWFnJOju0ik996RKE7w2Q+2X/v1+8Ovn4oKUVA91HHuU+f5Pu9r+/XNQLWFoG/TGeFg+BKAAAO9fxqMCXYGDCSw3wxiuNsMohcGIQYOybdYo16G+fAK/J/AweLVtaBnW0bwkO06RnCD/d9Vcw0OViQCouHtfGcE4eAy3xkBPXoz31FzDTGDfxsQBoiphoSNRWKMGTMQNzVK71MtMBVJGaBG4DPgG4HDgIPVMM4bQc1g8AURA1UgZr+NvQ+3p95+qIOIgafeSi/xL091EDLQ9laGycenp8YaZr13hj8uBDs6mH4+Cdpzi7OD673WsrtsPMPW+GR759prNWegDPRhBLvXnK4RHMKIfH+LPDSCE0JXnai6/LQaklbDpN0PXHvp9bV+L01zdZIeQN3V3a6OQ7WGgQXSEoBqRaZzgU4q4CsgzsEFSJsIouFGupu2eAoC6tV9nuW0SpCECoCjpexfuwSxBti16ZaHkRrTGeY3F3mpIwIyHGe7sdgGEbCrm8KUCG3QR5NC8m7xG6d2NNNtHmAN+hEQJUVYgjYkN8ijS3Wwyqs7W07Nea37t2N1NP0STGAlBZuRFrMoMs25mYHQCE7Ipvf+/etqo0YcjJY2BzcffaeCuLpHzW2Ow0/OHKXIqAJuAiF5RkAfzWIfJGmPfq2ZtCWYZE3cUmvweJFwQaqzVqDDAZ22gD9XKrBaAbCA3+fqb8U2mw1SkbEIeuX4CiASYqZ3ER2EQsxsWpbPlbrBgmxaxg2AZneRSAWOCPKcCiBiiuIuIhaZSH1Ic/oA5tHMhsuBhtFMh4s/XksQSjGry48DKsWEZLad53Q48GQAW8v5E+MBB/30trn4Vn4PXfk0vYfe2zjzBuuzvvHJe29jYJ2HQ8/47D7YGLb+CD3PMFhplRtvfzD2vjIDeO/gjcvuwkemmEDbP/28fTYvApABdOMng8TXAZTgs2jnl/iBMSZNFsbQvmg1L1FqR5MqqC4FCqjozDGVGvSYYJ6TKHgV8z8UE54HNMaMHSRFTIoPnxrAqKzhsSHmKCyOaas+5rObxfHIr09x2S3/hAHw96RvHMNo8lU3MYxmCRLrhUfTxUbz0JJTHM5oG5HAng4sKeYd7fMrcgqLOT7a/h6RQPq0zAEpi3R8OcWUf2LoQ7EejgVwS4pZrKijEqSyK4FAHstMdqTRdHkcLn0phS1Vx4JKwGI/OILriCnyNkDxzpuBVK6LoHgcJzw2UWKKbaikkEJ4sRA2AbA20LAe0HXKFv3Vm7+8pqVdarMf/LJIKoNOufJxSuDLNXTKNvDYSpG/SW2oSfHkuLYNwhmKFeDvJYiVmD8Eyh+PFBC7EtCKpPHX6Qti3y2/COLzpmq1JRVPizZUQG4Db1gFqsVZsREFKC+JWqO02aCuaanyXTVV17TUVUAogZCwi0KMKYGIKG1Qi/zT2AYOTG0oQAzHyud83hTA6ytAKTLuBs0gCpU2aN/D0C3XXloRvjeYV4CvtsFXwJdqG5RG6W1QgWk2cDDBQIABFwM2BiwEaLNBBeY2FMDchgJMMBBgwMWAjQELAQ1tYKChDQw0tIGBCQYCDLgYsDFgIaCpDTloakMOmtqQgwkGAgy4GLAREFoIOG8h4Igg4BCawe4ecobdOwh4fBcQcAUBo1kEnFgYaCHgGBAwwUCIAYoB+PfBX1g4KVvqy0nnAAAAAElFTkSuQmCC" alt="Расстояние между двумя точками в пространстве трех измерений"></p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><br>Рис.&nbsp; 2.&nbsp;Расстояние между двумя точками в пространстве трех измерений</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword17"></a>Кластер имеет следующие<a id="keyword18"></a> математические характеристики:<a id="keyword19"></a> центр,<a id="keyword20"></a> радиус,<a id="keyword21"></a> среднеквадратическое отклонение,<a id="keyword22"></a> размер кластера.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword23"></a><strong>Центр кластера</strong> - это среднее геометрическое&nbsp;<a id="keyword24"></a>место точек в пространстве переменных.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword25"></a><strong>Радиус кластера</strong> &ndash; максимальное<a id="keyword26"></a> расстояние точек от<a id="keyword27"></a> центра кластера.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Как было отмечено в одной из предыдущих лекций, кластеры могут быть перекрывающимися. Такая ситуация возникает, когда обнаруживается перекрытие кластеров. В этом случае невозможно при помощи математических процедур однозначно отнести<a id="keyword28"></a> объект&nbsp;к одному из двух кластеров. Такие объекты называют<a id="keyword29"></a> спорными.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword30"></a><strong>Спорный объект</strong> &ndash; это<a id="keyword31"></a> объект, который по мере сходства может быть отнесен к нескольким кластерам.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword32"></a>Размер кластера может быть определен либо по<a id="keyword33"></a> радиусу кластера, либо по<a id="keyword34"></a> среднеквадратичному отклонению объектов для этого кластера.<a id="keyword35"></a> Объект относится к кластеру, если<a id="keyword36"></a> расстояние от объекта до<a id="keyword37"></a> центра кластера меньше<a id="keyword38"></a> радиуса кластера. Если это условие выполняется для двух и более кластеров,<a id="keyword39"></a> объект является<a id="keyword40"></a> спорным.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Неоднозначность данной задачи может быть устранена экспертом или аналитиком.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Работа кластерного анализа опирается на два предположения. Первое предположение - рассматриваемые признаки объекта в принципе допускают желательное<a id="keyword41"></a> разбиение пула (совокупности) объектов на кластеры. В начале лекции мы уже упоминали о сравнимости шкал, это и есть второе предположение - правильность выбора масштаба или единиц измерения признаков.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Выбор масштаба в кластерном анализе имеет большое<a id="keyword42"></a> значение. Рассмотрим пример. Представим себе, что данные признака х в наборе данных А на два порядка больше данных признака у: значения переменной х находятся в диапазоне от 100 до 700, а значения переменной у - в диапазоне от 0 до 1.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Тогда, при расчете величины расстояния между точками, отражающими положение объектов в пространстве их свойств,<a id="keyword43"></a> переменная, имеющая большие значения, т.е.&nbsp;<a id="keyword44"></a>переменная&nbsp;х, будет практически полностью доминировать над переменной с малыми значениями, т.е. переменной у. Таким образом из-за неоднородности единиц измерения признаков становится невозможно корректно рассчитать расстояния между точками.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Эта проблема решается при помощи предварительной<a id="keyword45"></a> стандартизации переменных.<a id="keyword46"></a> Стандартизация (<a id="keyword47"></a>standardization) или нормирование (<a id="keyword48"></a>normalization) приводит значения всех преобразованных переменных к единому диапазону значений путем выражения через<a id="keyword49"></a> отношение этих значений к некой величине, отражающей определенные свойства конкретного признака. Существуют различные способы нормирования исходных данных.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Два наиболее распространенных способа:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">деление исходных данных на</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><a id="keyword50"></a><span style="font-family:'Times New Roman'; font-size:14pt;">среднеквадратичное отклонение</span><span style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">соответствующих переменных;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">вычисление Z-вклада или стандартизованного вклада.</span></li>
+        </ul>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Наряду со&nbsp;<a id="keyword51"></a>стандартизацией&nbsp;переменных, существует вариант придания каждой из них определенного коэффициента важности, или веса, который бы отражал&nbsp;<a id="keyword52"></a>значимость&nbsp;соответствующей переменной. В качестве весов могут выступать&nbsp;<a id="keyword53"></a>экспертные оценки, полученные в ходе опроса экспертов -&nbsp;<a id="keyword54"></a>магистров предметной области. Полученные произведения нормированных переменных на соответствующие веса позволяют получать расстояния между точками в многомерном пространстве с учетом неодинакового веса переменных.</p>
+        <p style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В ходе экспериментов возможно сравнение результатов, полученных с учетом экспертных оценок и без них, и выбор лучшего из них.</p>
+        <h3 style="margin-top:3.75pt; margin-left:127.6pt; margin-bottom:3.75pt; text-indent:0pt; text-align:justify; line-height:150%; background-color:#ffffff;">Методы кластерного анализа</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Методы кластерного анализа можно разделить на две группы:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">иерархические;</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">неиерархические.</span></li>
+        </ul>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Каждая из групп включает множество подходов и алгоритмов.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Используя различные методы кластерного анализа,<span class="apple-converted-space">&nbsp;</span><a id="keyword55"></a><span class="keyword" style="font-style:italic;">аналитик</span><span class="apple-converted-space">&nbsp;</span>может получить различные решения для одних и тех же данных. Это считается нормальным явлением.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Рассмотрим иерархические и неиерархические методы подробно.</p>
+        <h4 style="text-align:justify; line-height:150%; background-color:#ffffff;"><a id="sect3"></a>Иерархические методы кластерного анализа</h4>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Суть иерархической кластеризации состоит в последовательном объединении меньших кластеров в большие или разделении больших кластеров на меньшие.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Иерархические агломеративные методы (Agglomerative Nesting, AGNES)</strong></p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Эта группа методов характеризуется последовательным объединением исходных элементов и соответствующим уменьшением числа кластеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В начале работы алгоритма все объекты являются отдельными кластерами. На первом шаге наиболее похожие объекты объединяются в кластер. На последующих шагах объединение продолжается до тех пор, пока все объекты не будут составлять один кластер.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Иерархические дивизимные (делимые) методы (DIvisive ANAlysis, DIANA)</strong></p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Эти методы являются логической противоположностью агломеративным методам. В начале работы алгоритма все объекты принадлежат одному кластеру, который на последующих шагах делится на меньшие кластеры, в результате образуется последовательность расщепляющих групп.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Принцип работы описанных выше групп методов в виде<span class="apple-converted-space">&nbsp;</span><a id="keyword56"></a><span class="keyword" style="font-style:italic;">дендрограммы</span><span class="apple-converted-space">&nbsp;</span>показан на<span class="apple-converted-space">&nbsp;</span><a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=2#image.13.3" style="text-decoration:none;" target="_blank"><span class="Hyperlink" style="color:#0071a6;">рис..3</span></a>.</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="image.13.3"></a><img src="data:image/png;base64,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" alt="Дендрограмма агломеративных  и дивизимных методов"></p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><br><strong>Рис. 3.</strong><span class="apple-converted-space" style="font-weight:bold;">&nbsp;</span>Дендрограмма агломеративных и дивизимных методов</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Программная реализация алгоритмов кластерного анализа широко представлена в различных инструментах<span class="apple-converted-space">&nbsp;</span><a id="keyword57"></a><span class="keyword" style="font-style:italic;">Data Mining</span>, которые позволяют решать задачи достаточно большой размерности. Например, агломеративные методы реализованы в пакете SPSS, дивизимные методы - в пакете Statgraf.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Иерархические методы кластеризации различаются правилами построения кластеров. В качестве правил выступают критерии, которые используются при решении вопроса о &quot;схожести&quot; объектов при их объединении в группу (агломеративные методы) либо разделения на группы (дивизимные методы).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Иерархические методы кластерного анализа используются при небольших объемах наборов данных.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Преимуществом иерархических методов кластеризации является их наглядность.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Иерархические алгоритмы связаны с построением<a id="keyword58"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">дендрограмм</span><span class="apple-converted-space">&nbsp;</span>(от греческого dendron - &quot;дерево&quot;), которые являются результатом<a id="keyword59"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">иерархического кластерного анализа</span>.<a id="keyword60"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-weight:bold; font-style:italic;">Дендрограмма</span><span class="apple-converted-space">&nbsp;</span>описывает близость отдельных точек и кластеров друг к другу, представляет в графическом виде последовательность объединения (разделения) кластеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword61"></a><span class="keyword" style="font-weight:bold; font-style:italic;">Дендрограмма</span><span class="apple-converted-space">&nbsp;</span>(<a id="keyword62"></a><span class="keyword" style="font-style:italic;">dendrogram</span>) - древовидная диаграмма, содержащая n уровней, каждый из которых соответствует одному из шагов процесса последовательного укрупнения кластеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword63"></a><span class="keyword" style="font-style:italic;">Дендрограмму</span><span class="apple-converted-space">&nbsp;</span>также называют древовидной схемой, деревом объединения кластеров, деревом иерархической структуры.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="keyword64"></a><span class="keyword" style="font-style:italic;">Дендрограмма</span><span class="apple-converted-space">&nbsp;</span>представляет собой вложенную группировку объектов, которая изменяется на различных уровнях иерархии.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Существует много способов построения<span class="apple-converted-space">&nbsp;</span><a id="keyword65"></a><span class="keyword" style="font-style:italic;">дендрограмм</span>. В<span class="apple-converted-space">&nbsp;</span><a id="keyword66"></a><span class="keyword" style="font-style:italic;">дендрограмме</span><span class="apple-converted-space">&nbsp;</span>объекты могут располагаться вертикально или горизонтально. Пример вертикальной<span class="apple-converted-space">&nbsp;</span><a id="keyword67"></a><span class="keyword" style="font-style:italic;">дендрограммы</span><span class="apple-converted-space">&nbsp;</span>приведен на<span class="apple-converted-space">&nbsp;</span><a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=2#image.13.4" style="text-decoration:none;" target="_blank"><span class="Hyperlink" style="color:#0071a6;">рис..4</span></a>.</p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><a id="image.13.4"></a><img src="data:image/png;base64,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" alt="Пример дендрограммы"></p>
+        <p style="text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><br><strong>Рис. 1.4.</strong><span class="apple-converted-space" style="font-weight:bold;">&nbsp;</span>Пример дендрограммы</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Числа 11, 10, 3 и т.д. соответствуют номерам объектов или наблюдений исходной выборки. Мы видим, что на первом шаге каждое наблюдение представляет один кластер (вертикальная линия), на втором шаге наблюдаем объединение таких наблюдений: 11 и 10; 3, 4 и 5; 8 и 9; 2 и 6. На втором шаге продолжается объединение в кластеры: наблюдения 11, 10, 3, 4, 5 и 7, 8, 9. Данный процесс продолжается до тех пор, пока все наблюдения не объединятся в один кластер.</p>
+        <h3 style="margin-top:3.75pt; margin-left:0pt; margin-bottom:3.75pt; text-indent:0pt; text-align:left; line-height:150%; background-color:#ffffff;">Меры сходства</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Для вычисления расстояния между объектами используются различные меры сходства (меры подобия), называемые также метриками или функциями расстояний. В начале лекции мы рассмотрели<a id="keyword68"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">евклидово расстояние</span>, это наиболее популярная<a id="keyword69"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">мера&nbsp;</span>сходства.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Квадрат<span class="apple-converted-space">&nbsp;</span><a id="keyword70"></a><span class="keyword" style="font-style:italic;">евклидова расстояния</span>.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Для придания больших весов более отдаленным друг от друга объектам можем воспользоваться квадратом<a id="keyword71"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">евклидова расстояния&nbsp;</span>путем возведения в квадрат стандартного<a id="keyword72"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">евклидова расстояния</span>.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Манхэттенское расстояние</strong><span class="apple-converted-space">&nbsp;</span>(<a id="keyword73"></a><span class="keyword" style="font-style:italic;">расстояние</span><span class="apple-converted-space">&nbsp;</span>городских кварталов), также называемое &quot;хэмминговым&quot; или &quot;сити-блок&quot; расстоянием.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Это<a id="keyword74"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">расстояние</span><span class="apple-converted-space">&nbsp;</span>рассчитывается как среднее разностей по координатам. В большинстве случаев эта<a id="keyword75"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">мера&nbsp;</span>расстояния приводит к результатам, подобным расчетам расстояния евклида. Однако, для этой меры влияние отдельных выбросов меньше, чем при использовании<span class="apple-converted-space">&nbsp;</span><a id="keyword76"></a><span class="keyword" style="font-style:italic;">евклидова расстояния</span>, поскольку здесь<span class="apple-converted-space">&nbsp;</span><a id="keyword77"></a><span class="keyword" style="font-style:italic;">координаты</span><span class="apple-converted-space">&nbsp;</span>не возводятся в квадрат.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Расстояние Чебышева</strong>. Это<span class="apple-converted-space">&nbsp;</span><a id="keyword78"></a><span class="keyword" style="font-style:italic;">расстояние</span><span class="apple-converted-space">&nbsp;</span>стоит использовать, когда необходимо определить два объекта как &quot;различные&quot;, если они отличаются по какому-то одному измерению.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Процент несогласия</strong>. Это<span class="apple-converted-space">&nbsp;</span><a id="keyword79"></a><span class="keyword" style="font-style:italic;">расстояние</span><span class="apple-converted-space">&nbsp;</span>вычисляется, если данные являются категориальными.</p>
+        <h3 style="margin-top:3.75pt; margin-left:0pt; margin-bottom:3.75pt; text-indent:0pt; text-align:justify; line-height:150%; background-color:#ffffff;"><a id="sect5"></a>Методы объединения или связи</h3>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Когда каждый<span class="apple-converted-space">&nbsp;</span><a id="keyword80"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">объект</span><span class="apple-converted-space">&nbsp;</span>представляет собой отдельный<a id="keyword81"></a><span class="apple-converted-space">&nbsp;&nbsp;</span><span class="keyword" style="font-style:italic;">кластер</span>, расстояния между этими объектами определяются выбранной мерой. Возникает следующий вопрос - как определить расстояния между кластерами? Существуют различные правила, называемые методами объединения или связи для двух кластеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Метод ближнего соседа</strong><span class="apple-converted-space">&nbsp;</span>или<span class="apple-converted-space">&nbsp;</span><strong>одиночная связь</strong>. Здесь<span class="apple-converted-space">&nbsp;</span><a id="keyword82"></a><span class="keyword" style="font-style:italic;">расстояние</span><span class="apple-converted-space">&nbsp;</span>между двумя кластерами определяется расстоянием между двумя наиболее близкими объектами (ближайшими соседями) в различных кластерах. Этот метод позволяет выделять кластеры сколь угодно сложной формы при условии, что различные части таких кластеров соединены цепочками близких друг к другу элементов. В результате работы этого метода кластеры представляются длинными &quot;цепочками&quot; или &quot;волокнистыми&quot; кластерами, &quot;сцепленными вместе&quot; только отдельными элементами, которые случайно оказались ближе остальных друг к другу.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Метод наиболее удаленных соседей</strong><span class="apple-converted-space">&nbsp;</span>или полная<span class="apple-converted-space">&nbsp;</span><a id="keyword83"></a><span class="keyword" style="font-style:italic;">связь</span>. Здесь расстояния между кластерами определяются наибольшим расстоянием между любыми двумя объектами в различных кластерах (т.е. &quot;наиболее удаленными соседями&quot;). Метод хорошо использовать, когда объекты действительно происходят из различных &quot;рощ&quot;. Если же кластеры имеют в некотором роде удлиненную форму или их естественный тип является &quot;цепочечным&quot;, то этот метод не следует использовать.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Метод Варда</strong><span class="apple-converted-space">&nbsp;</span>(Ward&#39;s<span class="apple-converted-space">&nbsp;</span><a id="keyword84"></a><span class="keyword" style="font-style:italic;">method</span>). В качестве расстояния между кластерами берется прирост суммы квадратов расстояний объектов до<span class="apple-converted-space">&nbsp;</span><a id="keyword85"></a><span class="keyword" style="font-style:italic;">центров кластеров</span>, получаемый в результате их объединения (Ward, 1963). В отличие от других методов кластерного анализа для оценки расстояний между кластерами, здесь используются методы<span class="apple-converted-space">&nbsp;</span><a id="keyword86"></a><span class="keyword" style="font-style:italic;">дисперсионного анализа</span>. На каждом шаге алгоритма объединяются такие два кластера, которые приводят к минимальному увеличению целевой функции, т.е. внутригрупповой суммы квадратов. Этот метод направлен на<span class="apple-converted-space">&nbsp;</span><a id="keyword87"></a><span class="keyword" style="font-style:italic;">объединение</span><span class="apple-converted-space">&nbsp;</span>близко расположенных кластеров и &quot;стремится&quot; создавать кластеры малого размера.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Метод невзвешенного попарного среднего</strong><span class="apple-converted-space">&nbsp;</span>(метод невзвешенного попарного арифметического среднего - unweighted pair-group<a id="keyword88"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">method</span><span class="apple-converted-space">&nbsp;</span>using<a id="keyword89"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">arithmetic</span><span class="apple-converted-space">&nbsp;</span>averages, UPGMA (Sneath, Sokal, 1973)).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В качестве расстояния между двумя кластерами берется среднее<span class="apple-converted-space">&nbsp;</span><a id="keyword90"></a><span class="keyword" style="font-style:italic;">расстояние</span><span class="apple-converted-space">&nbsp;</span>между всеми парами объектов в них. Этот метод следует использовать, если объекты действительно происходят из различных &quot;рощ&quot;, в случаях присутствия кластеров &quot;цепочного&quot; типа, при предположении неравных размеров кластеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Метод взвешенного попарного среднего</strong><span class="apple-converted-space">&nbsp;</span>(метод взвешенного попарного арифметического среднего - weighted pair-group<a id="keyword91"></a><span class="keyword" style="font-style:italic;">method</span><span class="apple-converted-space">&nbsp;</span>using<a id="keyword92"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">arithmetic</span><span class="apple-converted-space">&nbsp;</span>averages, WPGM A (Sneath, Sokal, 1973)). Этот метод похож на метод невзвешенного попарного среднего, разница состоит лишь в том, что здесь в качестве весового коэффициента используется<a id="keyword93"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-weight:bold; font-style:italic;">размер кластера</span><span class="apple-converted-space">&nbsp;</span>(число объектов, содержащихся в кластере).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Этот метод рекомендуется использовать именно при наличии предположения о кластерах разных размеров.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Невзвешенный центроидный метод</strong><span class="apple-converted-space">&nbsp;</span>(метод невзвешенного попарного центроидного усреднения - unweighted pair-group<a id="keyword94"></a><span class="keyword" style="font-style:italic;">method</span><span class="apple-converted-space">&nbsp;</span>using the<a id="keyword95"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">centroid</span><a id="keyword96"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">average</span><span class="apple-converted-space">&nbsp;</span>(Sneath<span class="apple-converted-space">&nbsp;</span><a id="keyword97"></a><span class="keyword" style="font-style:italic;">and</span><span class="apple-converted-space">&nbsp;</span>Sokal, 1973)).</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В качестве расстояния между двумя кластерами в этом методе берется<a id="keyword98"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">расстояние</span><span class="apple-converted-space">&nbsp;</span>между их центрами тяжести.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;"><strong>Взвешенный центроидный метод</strong><span class="apple-converted-space">&nbsp;</span>(метод взвешенного попарного центроидного усреднения - weighted pair-group<a id="keyword99"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">method</span><span class="apple-converted-space">&nbsp;</span>using the<a id="keyword100"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">centroid</span><a id="keyword101"></a><span class="apple-converted-space">&nbsp;</span><span class="keyword" style="font-style:italic;">average</span>, WPGMC (Sneath, Sokal 1973)). Этот метод похож на предыдущий, разница состоит в том, что для учета разницы между<span class="apple-converted-space">&nbsp;</span><a id="keyword102"></a><span class="keyword" style="font-style:italic;">размерами кластеров</span><span class="apple-converted-space">&nbsp;</span>(числе объектов в них), используются веса. Этот метод предпочтительно использовать в случаях, если имеются предположения относительно существенных отличий в<span class="apple-converted-space">&nbsp;</span><a id="keyword103"></a><span class="keyword" style="font-style:italic;">размерах кластеров</span>.</p>
+        </div>
+</body>
+
+</html>

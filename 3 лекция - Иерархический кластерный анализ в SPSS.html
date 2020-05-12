@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div style="margin-top:3.75pt; margin-left:127.6pt; margin-bottom:3.75pt; background-color:#ffffff;">
+            <h3 style="margin-left:36pt; text-align:justify; line-height:150%;">Иерархический кластерный анализ в SPSS</h3>
+        </div>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Рассмотрим процедуру<span class="apple-converted-space">&nbsp;</span><a id="keyword104"></a><span class="keyword" style="font-style:italic;">иерархического кластерного анализа</span><span class="apple-converted-space">&nbsp;</span>в пакете SPSS (SPSS). Процедура<span class="apple-converted-space">&nbsp;</span><a id="keyword105"></a><span class="keyword" style="font-style:italic;">иерархического кластерного анализа</span>в SPSS предусматривает группировку как объектов (строк матрицы данных), так и переменных (столбцов) [54]. Можно считать, что в последнем случае роль объектов играют строки, а роль переменных - столбцы.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В этом методе реализуется иерархический агломеративный<span class="apple-converted-space">&nbsp;</span><a id="keyword106"></a><span class="keyword" style="font-style:italic;">алгоритм</span>, смысл которого заключается в следующем. Перед началом кластеризации все объекты считаются отдельными кластерами, в ходе алгоритма они объединяются. Вначале выбирается пара ближайших кластеров, которые объединяются в один<span class="apple-converted-space">&nbsp;</span><a id="keyword107"></a><span class="keyword" style="font-style:italic;">кластер</span>. В результате количество кластеров становится равным N-1. Процедура повторяется, пока все классы не объединятся. На любом этапе<span class="apple-converted-space">&nbsp;</span><a id="keyword108"></a><span class="keyword" style="font-style:italic;">объединение</span><span class="apple-converted-space">&nbsp;</span>можно прервать, получив нужное число кластеров. Таким образом, результат работы алгоритма агрегирования зависит от<span class="apple-converted-space">&nbsp;</span><strong>способов вычисления расстояния между объектами и определения близости между кластерами</strong>.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Для определения расстояния между парой кластеров могут быть сформулированы различные подходы. С учетом этого в SPSS предусмотрены следующие методы:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Среднее расстояние между кластерами (Between-groups linkage), устанавливается по умолчанию.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Среднее расстояние между всеми объектами пары кластеров с учетом расстояний внутри кластеров (Within-groups linkage).</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Расстояние между ближайшими соседями - ближайшими объектами кластеров (Nearest neighbor).</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Расстояние между самыми далекими соседями (Furthest neighbor).</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Расстояние между</span><span class="apple-converted-space" style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><a id="keyword109"></a><span class="keyword" style="font-family:'Times New Roman'; font-size:14pt; font-style:italic;">центрами кластеров</span><span class="apple-converted-space" style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">(</span><a id="keyword110"></a><span class="keyword" style="font-family:'Times New Roman'; font-size:14pt; font-style:italic;">Centroid</span><span class="apple-converted-space" style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">clustering) или центроидный метод. Недостатком этого метода является то, что центр объединенного кластера вычисляется как среднее центров объединяемых кластеров, без учета их объема.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Метод медиан - тот же центроидный метод, но центр объединенного кластера вычисляется как среднее всех объектов (</span><a id="keyword111"></a><span class="keyword" style="font-family:'Times New Roman'; font-size:14pt; font-style:italic;">Median</span><span class="apple-converted-space" style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">clustering).</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Метод Варда.</span></li>
+        </ul>
+        <h4 style="text-align:justify; line-height:150%; background-color:#ffffff;"><a id="sect7"></a>Пример иерархического кластерного анализа</h4>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Порядок агломерации (протокол объединения кластеров) представленных ранее данных приведен в<span class="apple-converted-space">&nbsp;</span><a href="http://www.intuit.ru/studies/courses/6/6/lecture/91?page=4#table.13.2" style="text-decoration:none;" target="_blank"><span class="Hyperlink" style="color:#0071a6;">таблице 13.2</span></a>. В протоколе указаны такие позиции:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><a id="keyword112"></a><span class="keyword" style="font-family:'Times New Roman'; font-size:14pt; font-style:italic;">Stage</span><span class="apple-converted-space" style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">- стадии объединения (шаг);</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Cluster Combined - объединяемые кластеры (после объединения кластер принимает минимальный номер из номеров объединяемых кластеров);</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><a id="keyword113"></a><span class="keyword" style="font-family:'Times New Roman'; font-size:14pt; font-style:italic;">Coefficients</span><span class="apple-converted-space" style="font-family:'Times New Roman'; font-size:14pt;">&nbsp;</span><span style="font-family:'Times New Roman'; font-size:14pt;">- коэффициенты.</span></li>
+        </ul>
+        <table style="border:0.75pt solid #000000; border-spacing:0.7pt;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><a id="table_13.2"></a>Таблица 13.2. Порядок агломерации</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><strong>&nbsp;</strong></p>
+                    </td>
+                    <td colspan="2" style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><strong>Cluster Combined</strong></p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><a id="keyword114"></a><span class="keyword" style="font-weight:bold; font-style:italic;">Coefficients</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><strong>&nbsp;</strong></p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><strong>Cluster 1</strong></p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><strong>Cluster 2</strong></p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:middle; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;"><strong>&nbsp;</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">9</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">10</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">,000</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">2</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">2</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">14</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1,461E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">3</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">3</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">9</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1,461E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">4</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">5</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">8</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1,461E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">5</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">6</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">7</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1,461E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">6</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">3</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">13</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">3,490E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">7</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">2</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">11</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">3,651E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">8</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">4</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">5</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">4,144E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">9</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">2</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">6</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">5,118E-02</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">10</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">4</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">12</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">,105</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">11</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">3</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">,120</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">12</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">4</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1,217</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">13</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">1</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">2</p>
+                    </td>
+                    <td style="border:0.75pt solid #000000; vertical-align:top; background-color:#ffffff;">
+                        <p style="text-align:justify; line-height:150%; font-size:14pt;">7,516</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Так, в колонке Cluster Combined можно увидеть порядок объединения в кластеры: на первом шаге были объединены наблюдения 9 и 10, они образовывают кластер под номером 9, кластер 10 в обзорной таблице больше не появляется. На следующем шаге происходит объединение кластеров 2 и 14, далее 3 и 9, и т.д.</p>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">В колонке<span class="apple-converted-space">&nbsp;</span><a id="keyword115"></a><span class="keyword" style="font-style:italic;">Coefficients</span><span class="apple-converted-space">&nbsp;</span>приведено количество кластеров, которое следовало бы считать оптимальным; под значением этого показателя подразумевается расстояние между двумя кластерами, определенное на основании выбранной<span class="apple-converted-space">&nbsp;</span><a id="keyword116"></a><span class="keyword" style="font-style:italic;">меры расстояния</span>. В нашем случае это квадрат<span class="apple-converted-space">&nbsp;</span><a id="keyword117"></a><span class="keyword" style="font-style:italic;">евклидова расстояния</span>, определенный с использованием стандартизированных значений. Процедура<a id="keyword118"></a><span class="keyword" style="font-style:italic;">стандартизации</span><span class="apple-converted-space">&nbsp;</span>используется для исключения вероятности того, что классификацию будут определять переменные, имеющие наибольший разброс значений. В SPSS применяются следующие виды<span class="apple-converted-space">&nbsp;</span><a id="keyword119"></a><span class="keyword" style="font-style:italic;">стандартизации</span>:</p>
+        <ul style="margin:0pt; padding-left:0pt;">
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Z-шкалы (Z-Scores). Из значений переменных вычитается их среднее, и эти значения делятся на стандартное отклонение.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Разброс от -1 до 1. Линейным преобразованием переменных добиваются разброса значений от -1 до 1.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Разброс от 0 до 1. Линейным преобразованием переменных добиваются разброса значений от 0 до 1.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Максимум 1. Значения переменных делятся на их максимум.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Среднее 1. Значения переменных делятся на их среднее.</span></li>
+            <li style="margin-top:1.8pt; margin-left:9.6pt; margin-bottom:1.8pt; text-align:justify; line-height:150%; padding-left:8.4pt; font-family:serif;"><span style="font-family:'Times New Roman'; font-size:14pt;">Стандартное отклонение 1. Значения переменных делятся на стандартное отклонение.</span></li>
+        </ul>
+        <p class="NormalWeb" style="margin-top:14pt; margin-bottom:14pt; text-align:justify; line-height:150%; font-size:14pt; background-color:#ffffff;">Кроме того, возможны преобразования самих расстояний, в частности, можно расстояния заменить их абсолютными значениями, это актуально для коэффициентов корреляции. Можно также все расстояния преобразовать так, чтобы они изменялись от 0 до 1.</p>
+    </div>
+</body>
+
+</html>

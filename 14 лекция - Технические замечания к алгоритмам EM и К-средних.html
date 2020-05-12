@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt
+        }
+
+        li,
+        table {
+            margin-top: 0pt;
+            margin-bottom: 0pt
+        }
+
+        h1 {
+            margin-bottom: 0pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h2 {
+            margin-bottom: 0pt;
+            text-align: justify;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: normal
+        }
+
+        h3 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h4 {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        h5 {
+            margin-left: 163.6pt;
+            margin-bottom: 0pt;
+            text-indent: -36pt;
+            text-align: center;
+            page-break-after: avoid;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        h6 {
+            margin-top: 12pt;
+            margin-bottom: 3pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 11pt;
+            font-weight: bold
+        }
+
+        .BalloonText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        .BodyText {
+            margin-bottom: 6pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .BodyText2 {
+            margin-bottom: 6pt;
+            line-height: 200%;
+            font-family: Calibri;
+            font-size: 11pt
+        }
+
+        .BodyTextIndent {
+            margin-bottom: 0pt;
+            text-indent: 28.35pt;
+            text-align: justify;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        .Default {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt;
+            color: #000000
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        .FootnoteText {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        .HTMLBottomofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-top: 0.75pt solid #000000;
+            padding-top: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .HTMLPreformatted {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        .HTMLTopofForm {
+            margin-bottom: 0pt;
+            text-align: center;
+            line-height: normal;
+            border-bottom: 0.75pt solid #000000;
+            padding-bottom: 1pt;
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        .Header {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Calibri;
+            font-size: 12pt
+        }
+
+        .NormalWeb {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style10 {
+            margin-bottom: 0pt;
+            text-indent: 34.1pt;
+            line-height: 21.85pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style110 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style2 {
+            margin-bottom: 0pt;
+            text-indent: 33.85pt;
+            text-align: justify;
+            line-height: 23.55pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .Style6 {
+            margin-bottom: 0pt;
+            line-height: 23.3pt;
+            widows: 0;
+            orphans: 0;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .\32 2 {
+            margin-top: 10pt;
+            margin-bottom: 6pt;
+            text-align: center;
+            line-height: normal;
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        .p {
+            margin-top: 5pt;
+            margin-bottom: 5pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .style1 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        .style22 {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: Arial;
+            font-size: 6pt;
+            color: #000000
+        }
+
+        .tekst {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        .a {
+            margin-left: 41.1pt;
+            margin-bottom: 0pt;
+            text-indent: -12.75pt;
+            text-align: justify;
+            line-height: 130%;
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.BalloonTextChar {
+            font-family: Tahoma;
+            font-size: 8pt
+        }
+
+        span.BodyText2Char {
+            font-family: Calibri
+        }
+
+        span.BodyTextChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.BodyTextIndentChar {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #800080
+        }
+
+        span.FontStyle14 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle15 {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.FontStyle17 {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            font-style: italic
+        }
+
+        span.FooterChar {
+            font-family: 'Times New Roman';
+            font-size: 10pt
+        }
+
+        span.FootnoteReference {
+            vertical-align: super
+        }
+
+        span.FootnoteTextChar {
+            font-family: Calibri;
+            font-size: 10pt
+        }
+
+        span.HTMLPreformattedChar {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HTMLTypewriter {
+            font-family: 'Courier New';
+            font-size: 10pt
+        }
+
+        span.HeaderChar {
+            font-family: 'Times New Roman';
+            font-size: 12pt
+        }
+
+        span.Heading1Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading2Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt
+        }
+
+        span.Heading3Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading4Char {
+            font-family: 'Times New Roman';
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.Heading5Char {
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            font-weight: bold
+        }
+
+        span.Heading6Char {
+            font-family: Calibri;
+            font-weight: bold
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #0000ff
+        }
+
+        span.Strong {
+            font-weight: bold
+        }
+
+        span.\32 20 {
+            font-family: OfficinaSansC;
+            font-size: 14pt;
+            font-weight: bold
+        }
+
+        span.style11 {
+            font-family: Arial;
+            font-size: 6pt
+        }
+
+        span.style211 {
+            color: #ff0000
+        }
+
+        span.z-BottomofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+
+        span.z-TopofFormChar {
+            font-family: Arial;
+            font-size: 8pt;
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1 style="margin-bottom:12pt; text-align:justify; line-height:150%; border-bottom:0.75pt solid #000000; padding-bottom:1pt;">Технические замечания:<span class="apple-converted-space">&nbsp;</span><em>EM</em><span class="apple-converted-space">&nbsp;</span>Алгоритм</h1>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><em>EM</em><span class="apple-converted-space">&nbsp;</span>алгоритм является основным методом отыскания оценки максимального правдоподобия параметра, лежащего в основе распределений из множества заданных данных. Мы полагаем все переменные независимыми, и все данные имеют<span class="apple-converted-space">&nbsp;</span><em>k</em><span class="apple-converted-space">&nbsp;</span>совместных распределений. Основной алгоритм разделен на два шага.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">1. M-алгоритм (шаг максимизации)</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:18pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><img src="data:image/png;base64,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" alt="GClustEq1"></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">2. E-алгоритм (шаг ожидания)</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:18pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAApCAMAAADAg73IAAADAFBMVEUAAACAgICAAACAgAAAgAAAgIAAAICAAICAgEAAQEAAgP8AQIBAAP+AQAD////AwMD/AAD//wAA/wAA//8AAP//AP///4AA/4CA//+AgP//AID/gEDA3MCmyvAzAABmAACZAADMAAAAMwAzMwBmMwCZMwDMMwD/MwAAZgAzZgBmZgCZZgDMZgD/ZgAAmQAzmQBmmQCZmQDMmQD/mQAAzAAzzABmzACZzADMzAD/zAAz/wBm/wCZ/wDM/wAAADMzADNmADOZADPMADP/ADMAMzMzMzNmMzOZMzPMMzP/MzMAZjMzZjNmZjOZZjPMZjP/ZjMAmTMzmTNmmTOZmTPMmTP/mTMAzDMzzDNmzDOZzDPMzDP/zDMA/zMz/zNm/zOZ/zPM/zP//zMAAGYzAGZmAGaZAGbMAGb/AGYAM2YzM2ZmM2aZM2bMM2b/M2YAZmYzZmZmZmaZZmbMZmb/ZmYAmWYzmWZmmWaZmWbMmWb/mWYAzGYzzGZmzGaZzGbMzGb/zGYA/2Yz/2Zm/2aZ/2bM/2b//2YAAJkzAJlmAJmZAJnMAJn/AJkAM5kzM5lmM5mZM5nMM5n/M5kAZpkzZplmZpmZZpnMZpn/ZpkAmZkzmZlmmZmZmZnMmZn/mZkAzJkzzJlmzJmZzJnMzJn/zJkA/5kz/5lm/5mZ/5nM/5n//5kAAMwzAMxmAMyZAMzMAMz/AMwAM8wzM8xmM8yZM8zMM8z/M8wAZswzZsxmZsyZZszMZsz/ZswAmcwzmcxmmcyZmczMmcz/mcwAzMwzzMxmzMyZzMzMzMz/zMwA/8wz/8xm/8yZ/8zM/8z//8wzAP9mAP+ZAP/MAP8AM/8zM/9mM/+ZM//MM///M/8AZv8zZv9mZv+ZZv/MZv//Zv8Amf8zmf9mmf+Zmf/Mmf//mf8AzP8zzP9mzP+ZzP/MzP//zP8z//9m//+Z///M//8EBAQICAgMDAwREREWFhYcHBwiIiIpKSlVVVVNTU1CQkI5OTn/fID/UFDWAJPM7P/v1sbn59a47ZksAAAAAWJLR0QAiAUdSAAAAAxjbVBQSkNtcDA3MTIAAAADSABzvAAAAdpJREFUWEfNlgtyxCAIQPcATu5/3JXIVwmyMabNdNqpIg8QkM/x61ecA8PaXAgkPk+wj5E1X6kSv8I9lw4HPix51vx/eCnlqD/1a/bL/3hp5BZs0Nfk6aQrkfQclMJ50WFyhWzSF4CieNKVyMFPhwzc5imqvjAITroSSTiFnD134F1KKRzBe4k8XN159cNaofdoS+Acss70koJLwFmjdYLhatmuuRI5uGTxaQeEsWmjrOIi4DXKMCPS9OBSyTWZ3h+5cAM3dddnmA4V7VXPqznwXfdZs+XEu+twKgFGYgsR/gK4dA/XgM4wT+GwxkFXGlmIgQgP/L6OiOo5mjHVxVHGhJse8EyQgosMDPYa/Babc/0mGp/UgY05eM+mvC3g+W7GpTWU7UGhURie/6tL7ew+1KsmtZ+PbZhwszJ/BOMr+Uh/43FlI86q1g8LvBevgQH0KHws2dgXBV923AlbHEkNX2yXLiik27AvXfki/A67n8z7mT7SmRqj4rQxkzn0KcPbC6eZ3s4KbO9mOL7JfwaXVwH6FJqBz8R0mFjoa8wV5Ht3LoNve6GgVZ0GzR3Pze1RYMTNLrVegGuipbdAhBe6WOd2ph8smXStRXgwfSWSeBM890btgqeeiS9WURK8l3LyAwAAAABJRU5ErkJggg==" alt="CGClustEq2"></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">где<span class="apple-converted-space">&nbsp;</span><em>u</em><em><span style="font-size:9.33pt;"><sub>i</sub></span></em><span class="apple-converted-space">&nbsp;</span>среднее распределения<span class="apple-converted-space">&nbsp;</span><em>i</em>.<span class="apple-converted-space">&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVDhPpY7PFUQwEMbTgDZU4O65U4AGKIA7dxpQAA24a0AFCqAA7snuTEbWn+za8Hvvk5kv48swcQPGGApr/BpgWZaY5xkFtXHAOI5U0SZU3+JRgOM4ou/7ewGe54mu6/A0DgiCAFdfT+OAuq532gXEcfxTOlRAmqa4UlEUSsdeBwbkeY7DWZahuQLeFTgBg0mSoLEF/LIsqdOjAnSAH0URdZKqqqiSfA1omkbrh2FIlQQnfN8XbdvuBD+Dv2W926KecF33pCPgHbc673jBo4BhGIRt29RJjALg9WmaqJMwzvnyr94BqI/Hlxd8o2NmyrJHeQAAAABJRU5ErkJggg==" alt="GClustEq3"><span class="apple-converted-space">&nbsp;</span>дисперсия распределения<span class="apple-converted-space">&nbsp;</span><em>i</em>.<span class="apple-converted-space">&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADcSURBVDhPnZABFUYwFIUXhAIaSEACBUigAAkUkGAJSEABCShAgb3f5m02Zub/znnHvffY3YMAQgh5HBdGwbquxsjMhVGgE4YhzPOM7hl1apomVAdvq0usb8VxDMMwoHNzK0jTFLquQ/eOUZBlGVBK0fmhCoqigLZt0fmjCmw/rSxLVAc2L07VdQ1VVYlQYstsnjRNI27nT32uG8n8qkme5/A0OtzLUl3fP9yBvtXngr7vIUmSm/Yu4DeO46i0xLsgiqJz7X8KOPzgsiwQBAEme8YY23xnLxBzZmz7AWQE6TBZocyDAAAAAElFTkSuQmCC" alt="GClustEq4"><span class="apple-converted-space">&nbsp;</span>вычисленный вес (вероятность) наблюдения<span class="apple-converted-space">&nbsp;</span><em>j</em>, принадлежащего кластеру<span class="apple-converted-space">&nbsp;</span><em>i</em>.<span class="apple-converted-space">&nbsp;</span> <em>c</em><em><span style="font-size:9.33pt;"><sub>i</sub></span></em><span class="apple-converted-space">&nbsp;</span>соответствует кластеру<span class="apple-converted-space">&nbsp;</span><em>i</em>.<span class="apple-converted-space">&nbsp;</span> <em>p</em>(<em>x</em><em><span style="font-size:9.33pt;"><sub>j</sub></span></em>) соответствует вероятности.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAAAcCAYAAACaoaj6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATiSURBVHhe7ZstrBZHFIavBQmySJBYNI5UgKCtooogMG2qqKJBIEpQoNpiEKQoUFBT0aQKVJOKNoFUFVcQNGmDm/b9dt97D+eemTkzu7N34ZsnOXw75/c9+xMSEnZCZzKn/7+LtbYU1myvdQ6G3Vt/5tDbD+LNv+PFiI6X0LJ3DS3msSd20/tZxDSgttW9mEtjLZiJnnMyhz5o8twPD1N21DreWk0uevbIeCGYciNa9q6hxTzshb6wv1+NzgSWBvZoxRwaa8As67lPZS590Oa5Hynm2FHq2F3trxchfPzBeDDIxVO07F1Dy3noC8NLgzkpYhrmeuFizKGxlFY7zdl3aq+5tLDPbjs6XjzfM4kV1zkxv7c3sOIgVku8cSDnteLC8WFOTE8KS59nt9JZUzQCPVdeS+DDLA3zWSOvveSepZ6RAhp1nq6X1xL4rB0Ba6w6C+rYXY1LXjw5mF6aZ/wyBwb++HWwXG0uzh4yrnvDcCa5OJBxXOv5GvaMmRfMw6ySGqD1od6zG+Ml81BToxFwJuulBknsfsfqS4j1Rj/ZM5an0XmyvnTHWg0AuZv035+GcPnUxrchdtZ+gkbSL0XU9Jb1ujcoiet5Vr4G8ZSVgHypx0NKP67hI7q3Zz9NjUYCLXqmpSlFjWYS6617evtb/Wp3rNUAULtpmRuE8y8/7fcD+L84vXctz8DbW/awriXsURPX81sT05hCarT0puI1+9VoJJiXu8c5TTWaiVU7dR8NfKU7TtEA0G/TMjcI5ysf7vcD+J7+MBhyYBJvbyLjOhdwDiiNI2bVaLhPzErwzNPIGqte+rCr1Kbvv4cajUTXWhpS/ZmP3xipWO7+WEzt59kxpwHkdOz8/CCEq+dDwC+InYH2AzSBnzn0A9bKGutMdFwvCL/0lcQZk/1jICdlXjCnJJ9I3aiXenVPnmml1GoEMS0a/ZyIzI/lgJQ+q077MEdS0q92x5wGkNOxgz9+vBfC9Qt7Tn2W6Dh+cabRD1r0Zgzk4uzHmO7fkto5qKNOgj44Wz3ljjQvVr8S9OxYL+qX4Ix6oncG7JtC9iDyfsGkrlRPnQtqd0xpAPRbMH/n5qUQYMQ6S3Qc0JfLtc4SHQf0aT9JxXUsljc3j+7Uz6FGXW/5OEcb/DmmaCR4ceXcFPoj0jVWD5ytj08Si7NfSU/LD1+sl0bXp+rgy+mIhDu1PLwdwq3PxoMD5NeSe7gx5tBY2gO5NbvmdsnFLawaa5/WO+Z0VKzWSVH6stS8XOSbKyHcv7Hf4E8xVSNmwIffEqjXS4tdrJ4xX8sdPToKV+ukuHttMC/ILX25NJwpLYUnR4JcrZE9SvqQkhrPvSm9f8jXGixN3K9EL/HUeHQUrtaJ8e2Xww3Hr9eQ//3XY4MF4EytI2VLawSYCzA7R6k25C+9j4VHh2P9To7bnw8vUo0txbugkWAm9D64NTq2lAO49e8fj76rt6WwZnttaQ5q7troH2ens1L6x7kgX300XqyQNWvbVvrHuSBPHo8XK2TN2raV/nEuAP53wpT/odCatevbVvrHuQC/PTmYf/X0snZ920p/JAux9pe/f5zroz+SBfj0RAh/PhsPK2Tt+raV/nEuwLvwt+Ynx8ZDZzX0j7Mh544Ov2v/OF+/HKyzLvrH2RB8lGcOh/Dmn9HR6bgJ4T/ztp0zstWmMgAAAABJRU5ErkJggg==" alt="GClustEq6"></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Если оцененное сверху значение<span class="apple-converted-space">&nbsp;</span><em>правдоподобия</em><span class="apple-converted-space">&nbsp;</span>меньше указанного вами значения, то прервите итерацию и получите окончательную кластеризацию. Также, если число итераций равно максимальному числу итераций, прервите итерацию и получите окончательную кластеризацию.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">&nbsp;</p>
+        <h1 style="margin-bottom:12pt; text-align:justify; line-height:150%; border-bottom:0.75pt solid #000000; padding-bottom:1pt;">Технические замечания: алгоритм<span class="apple-converted-space">&nbsp;</span><em>К</em>-средних</h1>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Алгоритм<span class="apple-converted-space">&nbsp;</span><em>К</em>-средних является методом кластеризации, используемый для разделения набора объектов на<span class="apple-converted-space">&nbsp;</span><em>k</em><span class="apple-converted-space">&nbsp;</span>групп в соответствии с указанной мерой близости. Основной алгоритм разделен на два шага.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">1. Вычисление центроидов кластера</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:23.25pt; margin-bottom:0pt; text-indent:-11.25pt; text-align:justify; line-height:150%; font-size:14pt;">a. Начальные центроиды устанавливаются, используя метод, указанный пользователем. Три метода начальных центров: выбрать<span class="apple-converted-space">&nbsp;</span><em>N</em><span class="apple-converted-space">&nbsp;</span>наблюдений для максимизации начального расстояния, случайно выбрать<span class="apple-converted-space">&nbsp;</span><em>N</em>наблюдений, и выбрать первые<span class="apple-converted-space">&nbsp;</span><em>N</em><span class="apple-converted-space">&nbsp;</span>наблюдений. Здесь<span class="apple-converted-space">&nbsp;</span><em>N</em><span class="apple-converted-space">&nbsp;</span>означает<span class="apple-converted-space">&nbsp;</span><em>k</em>.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:23.25pt; margin-bottom:0pt; text-indent:-11.25pt; text-align:justify; line-height:150%; font-size:14pt;">b. После присвоения всех объектов ближайшему центроиду, вычисляются новые центроиды, используя все члены им присвоенные. Для непрерывных переменных значение центроида есть среднее значений всех членов, присвоенных этому кластеру. Для категориальных переменных значение центроида есть первая модель всех членов ему присвоенных.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">2. Присвоение каждого объекта ближайшему центроиду</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:23.25pt; margin-bottom:0pt; text-indent:-11.25pt; text-align:justify; line-height:150%; font-size:14pt;">a. Ближайший центроид в точности использует метод заданной меры близости. Значения всех непрерывных переменных перед вычислением нормализуются. Отметьте, что<span class="apple-converted-space">&nbsp;</span><em>c</em><span class="apple-converted-space">&nbsp;</span>обозначает центроид и<span class="apple-converted-space">&nbsp;</span><em>x</em><span class="apple-converted-space">&nbsp;</span>обозначает наблюдение.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:36pt; margin-bottom:0pt; text-indent:-11.25pt; text-align:justify; line-height:150%; font-size:14pt;">i. Если<span class="apple-converted-space">&nbsp;</span><em>i</em>-я переменная категориальная,<span class="apple-converted-space">&nbsp;</span><em>(xi - ci)</em><span class="apple-converted-space">&nbsp;</span>равно<span class="apple-converted-space">&nbsp;</span><em>0</em><span class="apple-converted-space">&nbsp;</span>если их значения совпадают, иначе равно<span class="apple-converted-space">&nbsp;</span><em>1</em>.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:36pt; margin-bottom:0pt; text-indent:-11.25pt; text-align:justify; line-height:150%; font-size:14pt;">ii. Если<span class="apple-converted-space">&nbsp;</span><em>i</em>-я переменная непрерывна,<span class="apple-converted-space">&nbsp;</span><em>xi</em><span class="apple-converted-space">&nbsp;</span>и<span class="apple-converted-space">&nbsp;</span><em>ci</em><span class="apple-converted-space">&nbsp;</span>сперва нормализуются, используя минимальное и максимальное значения этих переменных.</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:27pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Евклидово расстояние:</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:36pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><span style="color:#0000ff;">distance( x,</span><span class="apple-converted-space" style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">c ) = {еi (xi - ci)2 }Ѕ</span></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:27pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Квадрат евклидова расстояния:</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:36pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><span style="color:#0000ff;">distance( x,</span><span class="apple-converted-space" style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">c ) = еi (xi - ci)2</span></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:27pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Манхэттенское расстояние:</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:36pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><span style="color:#0000ff;">distance( x,</span><span class="apple-converted-space" style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">c ) = еi |xi - ci|</span></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:27pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Расстояния Чебышева:</p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:36pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;"><span style="color:#0000ff;">distance( x,</span><span class="apple-converted-space" style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">&nbsp;</span><span style="color:#0000ff;">c ) = Maximum|xi - ci|</span></p>
+        <p class="NormalWeb" style="margin-top:7pt; margin-left:23.25pt; margin-bottom:0pt; text-indent:-11.25pt; text-align:justify; line-height:150%; font-size:14pt;">b. Если все наблюдения принадлежат кластеру, которому принадлежали до текущей итерации, прервите итерацию. Также, если число итераций равно максимальному числу итераций, прервите итерацию. Обновите центроиды и получите окончательную кластеризацию.</p>
+        <h1 style="margin-bottom:12pt; text-align:justify; line-height:150%; border-bottom:0.75pt solid #000000; padding-bottom:1pt;">Различия между алгоритмами<span class="apple-converted-space">&nbsp;</span><em>k</em>-средних в обобщенных методах кластерного анализа и кластерным анализом</h1>
+        <p class="NormalWeb" style="margin-top:7pt; margin-bottom:0pt; text-align:justify; line-height:150%; font-size:14pt;">Реализация алгоритмов кластеризации k-средних в модуле<span class="apple-converted-space">&nbsp;</span><em>Кластерный Анализ</em><span class="apple-converted-space">&nbsp;</span>и модуле<span class="apple-converted-space">&nbsp;</span><em>Обобщенные методы кластерного анализа</em><span class="apple-converted-space">&nbsp;</span>очень похожи и описаны в Hartigan (1975; Hartigan and Wong, 1978). Однако, расстояние между наблюдениями и кластерами (центроидами кластеров) вычисляется по-разному в этих двух модулях, и эти различия могут привести к слегка отличающимся результатам, и иногда очень разным результатам.</p>
+    </div>
+</body>
+
+</html>
